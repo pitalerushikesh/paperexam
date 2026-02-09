@@ -1,0 +1,34 @@
+/* Import KaTeX CSS globally */
+@import 'katex/dist/katex.min.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0e0e0; /* Desk background */
+  margin: 0;
+}
+
+/* Print Optimizations */
+@media print {
+  body {
+    background-color: white;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .page-break {
+    page-break-after: always;
+  }
+  .exam-paper {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
