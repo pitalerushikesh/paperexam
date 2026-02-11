@@ -13,8 +13,7 @@
         padding: 0;
         height: 100vh;
         width: 100vw;
-        overflow: hidden;
-        /* Disables all browser-level gestures like pinch-to-zoom */
+        overflow: hidden !important;
         touch-action: none !important;
       }
 
@@ -38,10 +37,49 @@
         background-repeat: no-repeat, repeat !important;
       }
 
-      /* Hide the zoom UI completely */
-      .excalidraw .zoom-actions,
-      .excalidraw .current-zoom,
-      .excalidraw .footer-center {
+      .excalidraw .sidebar-trigger {
+        display: none !important;
+      }
+    </style>
+    <style>
+      /* 1. Transform the Top Bar into a clean Header */
+      .excalidraw .App-toolbar-container {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 52px !important;
+        background: #f1f3f5 !important; /* Grey header background */
+        border-bottom: 1px solid #ced4da !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        z-index: 100 !important;
+      }
+
+      /* 2. Remove the "Floating" side tools (Lock and Hand icons on the right) */
+      /* These are the icons visible in your uploaded image_b5ce1c.png */
+      .excalidraw .App-menu__right,
+      .excalidraw .layer-ui__sidebars,
+      [data-testid="toolbar-hand"],
+      [data-testid="toolbar-lock"] {
+        display: none !important;
+      }
+
+      /* 3. Push the 'Answer Sheet' text down so it's not hidden behind the bar */
+      .excalidraw .layer-ui__wrapper {
+        margin-top: 52px !important;
+      }
+
+      /* 4. Adjust your notebook paper lines to start exactly under the header */
+      .excalidraw {
+        background-position:
+          0 52px,
+          0 84px !important;
+      }
+
+      /* 5. Keep the hamburger menu hidden */
+      .excalidraw .App-menu__left {
         display: none !important;
       }
     </style>
@@ -53,22 +91,15 @@
       window.process = { env: { NODE_ENV: "production" } };
       let apiReference = null;
 
-      // 1. THE HARD LOCK: Intercept and kill wheel events before they bubble
+      // Hard block for wheel events (prevents both zoom and scroll)
       window.addEventListener(
         "wheel",
         (e) => {
-          // Stop Ctrl+Wheel (Zoom) AND normal Wheel (if you want to prevent panning)
-          if (e.ctrlKey || e.metaKey) {
-            e.preventDefault();
-            e.stopPropagation();
-          }
+          e.preventDefault();
+          e.stopPropagation();
         },
         { capture: true, passive: false },
       );
-
-      // 2. THE GESTURE LOCK: Prevent pinch-to-zoom on trackpads
-      window.addEventListener("gesturestart", (e) => e.preventDefault());
-      window.addEventListener("gesturechange", (e) => e.preventDefault());
 
       function init() {
         const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -80,9 +111,21 @@
               apiReference = api;
             },
             onChange: (elements, state) => {
-              // Safety check: force zoom to 1 if it ever slips through
-              if (state.zoom.value !== 1 && apiReference) {
-                apiReference.updateScene({ appState: { zoom: { value: 1 } } });
+              // THE SNAP-BACK LOGIC
+              // If the user tries to pan or scroll, force it back to (0,0)
+              if (
+                apiReference &&
+                (state.scrollX !== 0 ||
+                  state.scrollY !== 0 ||
+                  state.zoom.value !== 1)
+              ) {
+                apiReference.updateScene({
+                  appState: {
+                    scrollX: 0,
+                    scrollY: 0,
+                    zoom: { value: 1 },
+                  },
+                });
               }
 
               const payload = JSON.parse(JSON.stringify(elements));
@@ -91,14 +134,17 @@
                 "*",
               );
             },
-            zenModeEnabled: true,
+            zenModeEnabled: false,
             gridModeEnabled: false,
             initialData: {
               appState: {
                 activeTool: { type: "freedraw" },
                 viewBackgroundColor: "transparent",
                 zoom: { value: 1 },
-                allowPanning: false,
+                scrollX: 0,
+                scrollY: 0,
+                allowPanning: false, // Disables right-click drag
+                scrollToContent: false,
               },
             },
           });
@@ -113,5 +159,35 @@
         }
       }, 100);
     </script>
+    <!-- <script>
+      const observer = new MutationObserver(() => {
+        // 1. Find all buttons that might be the Hand, Lock, or Menu
+        const selectors = [
+          '[data-testid="toolbar-hand"]',
+          '[data-testid="toolbar-lock"]',
+          '[data-testid="main-menu-trigger"]',
+          '[aria-label*="Hand"]',
+          '[aria-label*="Lock"]',
+          '[aria-label*="Main menu"]',
+        ];
+
+        selectors.forEach((selector) => {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach((el) => el.remove());
+        });
+
+        // 2. Hide the side containers if they still exist
+        const sidebars = document.querySelectorAll(
+          ".App-menu__left, .App-menu__right, .footer-center",
+        );
+        sidebars.forEach((s) => (s.style.display = "none"));
+      });
+
+      // Start watching the document for when Excalidraw finishes loading
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    </script> -->
   </body>
 </html>

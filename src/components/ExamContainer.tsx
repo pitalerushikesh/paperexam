@@ -110,7 +110,14 @@ export const ExamContainer: React.FC = () => {
               {currentStep > 0 && (
                 <Box
                   key={`q-wrapper-${currentStep}`}
-                  sx={{ width: "100%", maxWidth: "210mm" }}
+                  sx={{
+                    width: "100%",
+                    maxWidth: "210mm",
+                    overflow: "hidden", // Prevents parent-level scrolling
+                    position: "relative",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
                 >
                   <ExcalidrawIFrame
                     questionId={currentStep}
