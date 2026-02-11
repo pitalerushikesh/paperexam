@@ -44,9 +44,10 @@
     <style>
       /* 1. Transform the Top Bar into a clean Header */
       .excalidraw .App-toolbar-container {
-        position: absolute !important;
+        position: fixed !important;
         top: 0 !important;
         left: 0 !important;
+        padding-right: 15px !important;
         width: 100% !important;
         height: 52px !important;
         background: #f1f3f5 !important; /* Grey header background */
@@ -61,6 +62,7 @@
       /* These are the icons visible in your uploaded image_b5ce1c.png */
       .excalidraw .App-menu__right,
       .excalidraw .layer-ui__sidebars,
+      .excalidraw .main-menu-trigger,
       [data-testid="toolbar-hand"],
       [data-testid="toolbar-lock"] {
         display: none !important;
