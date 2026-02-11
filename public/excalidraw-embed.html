@@ -14,76 +14,104 @@
         height: 100vh;
         width: 100vw;
         overflow: hidden;
-        background-color: #fff;
+        /* Disables all browser-level gestures like pinch-to-zoom */
+        touch-action: none !important;
       }
-      #debug-status {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: sans-serif;
-        color: #666;
+
+      .excalidraw {
+        background-color: #ffffff !important;
+        background-image:
+          linear-gradient(
+            90deg,
+            transparent 65px,
+            #ffadad 65px,
+            #ffadad 67px,
+            transparent 67px
+          ),
+          linear-gradient(#d1e5f0 1px, transparent 1px) !important;
+        background-size:
+          100% 100%,
+          100% 32px !important;
+        background-position:
+          0 0,
+          0 40px !important;
+        background-repeat: no-repeat, repeat !important;
+      }
+
+      /* Hide the zoom UI completely */
+      .excalidraw .zoom-actions,
+      .excalidraw .current-zoom,
+      .excalidraw .footer-center {
+        display: none !important;
       }
     </style>
   </head>
   <body>
-    <div id="debug-status">Initializing Answer Sheet...</div>
     <div id="root"></div>
 
     <script>
-      console.log("Iframe: Starting script...");
+      window.process = { env: { NODE_ENV: "production" } };
+      let apiReference = null;
 
-      const checkLibrary = setInterval(() => {
-        console.log(
-          "Iframe: Checking for ExcalidrawLib...",
-          !!window.ExcalidrawLib,
-        );
-        if (window.ExcalidrawLib && window.React && window.ReactDOM) {
-          clearInterval(checkLibrary);
-          document.getElementById("debug-status").style.display = "none";
-          renderExcalidraw();
-        }
-      }, 500);
+      // 1. THE HARD LOCK: Intercept and kill wheel events before they bubble
+      window.addEventListener(
+        "wheel",
+        (e) => {
+          // Stop Ctrl+Wheel (Zoom) AND normal Wheel (if you want to prevent panning)
+          if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        },
+        { capture: true, passive: false },
+      );
 
-      function renderExcalidraw() {
-        try {
-          const root = ReactDOM.createRoot(document.getElementById("root"));
-          const Excalidraw = window.ExcalidrawLib.Excalidraw;
+      // 2. THE GESTURE LOCK: Prevent pinch-to-zoom on trackpads
+      window.addEventListener("gesturestart", (e) => e.preventDefault());
+      window.addEventListener("gesturechange", (e) => e.preventDefault());
 
-          const App = () => {
-            return React.createElement(Excalidraw, {
-              initialData: {
-                appState: {
-                  activeTool: { type: "freedraw" },
-                  zenModeEnabled: true,
-                  viewBackgroundColor: "#ffffff",
-                },
+      function init() {
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        const Excalidraw = window.ExcalidrawLib.Excalidraw;
+
+        const App = () => {
+          return React.createElement(Excalidraw, {
+            excalidrawRef: (api) => {
+              apiReference = api;
+            },
+            onChange: (elements, state) => {
+              // Safety check: force zoom to 1 if it ever slips through
+              if (state.zoom.value !== 1 && apiReference) {
+                apiReference.updateScene({ appState: { zoom: { value: 1 } } });
+              }
+
+              const payload = JSON.parse(JSON.stringify(elements));
+              window.parent.postMessage(
+                { type: "DRAWING_UPDATE", payload },
+                "*",
+              );
+            },
+            zenModeEnabled: true,
+            gridModeEnabled: false,
+            initialData: {
+              appState: {
+                activeTool: { type: "freedraw" },
+                viewBackgroundColor: "transparent",
+                zoom: { value: 1 },
+                allowPanning: false,
               },
-              onChange: (elements) => {
-                if (elements.length > 0) {
-                  window.parent.postMessage(
-                    {
-                      type: "DRAWING_UPDATE",
-                      payload: JSON.parse(JSON.stringify(elements)),
-                    },
-                    "*",
-                  );
-                }
-              },
-            });
-          };
-
-          root.render(React.createElement(App));
-          console.log("Iframe: Render successful");
-
-          // Tell parent we are ready
-          window.parent.postMessage({ type: "READY" }, "*");
-        } catch (err) {
-          console.error("Iframe: Render error:", err);
-          document.getElementById("debug-status").innerText =
-            "Render Error: " + err.message;
-        }
+            },
+          });
+        };
+        root.render(React.createElement(App));
       }
+
+      const timer = setInterval(() => {
+        if (window.ExcalidrawLib) {
+          clearInterval(timer);
+          init();
+        }
+      }, 100);
     </script>
   </body>
 </html>
