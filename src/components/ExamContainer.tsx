@@ -118,7 +118,12 @@ export const ExamContainer: React.FC = () => {
                     logoUrl={logo}
                   />
                 ) : (
-                  currentQuestion && <QuestionCard {...currentQuestion} />
+                  currentQuestion && (
+                    <QuestionCard
+                      subject={selectedSubject}
+                      {...currentQuestion}
+                    />
+                  )
                 )}
               </Box>
 
