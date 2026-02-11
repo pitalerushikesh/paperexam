@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Excalidraw Embed</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw/dist/excalidraw.production.min.js"></script>
+    <style>
+      body,
+      html,
+      #root {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-color: #fff;
+      }
+      #debug-status {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: sans-serif;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="debug-status">Initializing Answer Sheet...</div>
+    <div id="root"></div>
+
+    <script>
+      console.log("Iframe: Starting script...");
+
+      const checkLibrary = setInterval(() => {
+        console.log(
+          "Iframe: Checking for ExcalidrawLib...",
+          !!window.ExcalidrawLib,
+        );
+        if (window.ExcalidrawLib && window.React && window.ReactDOM) {
+          clearInterval(checkLibrary);
+          document.getElementById("debug-status").style.display = "none";
+          renderExcalidraw();
+        }
+      }, 500);
+
+      function renderExcalidraw() {
+        try {
+          const root = ReactDOM.createRoot(document.getElementById("root"));
+          const Excalidraw = window.ExcalidrawLib.Excalidraw;
+
+          const App = () => {
+            return React.createElement(Excalidraw, {
+              initialData: {
+                appState: {
+                  activeTool: { type: "freedraw" },
+                  zenModeEnabled: true,
+                  viewBackgroundColor: "#ffffff",
+                },
+              },
+              onChange: (elements) => {
+                if (elements.length > 0) {
+                  window.parent.postMessage(
+                    {
+                      type: "DRAWING_UPDATE",
+                      payload: JSON.parse(JSON.stringify(elements)),
+                    },
+                    "*",
+                  );
+                }
+              },
+            });
+          };
+
+          root.render(React.createElement(App));
+          console.log("Iframe: Render successful");
+
+          // Tell parent we are ready
+          window.parent.postMessage({ type: "READY" }, "*");
+        } catch (err) {
+          console.error("Iframe: Render error:", err);
+          document.getElementById("debug-status").innerText =
+            "Render Error: " + err.message;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -7,13 +7,14 @@ import {
   Fade,
   Container,
 } from "@mui/material";
-import type { Question } from "../utils/types"; // Type-only import
+import type { Question } from "../utils/types";
 import { questions } from "../utils/data";
 import { ExamHeader } from "./ExamHeader";
 import { QuestionCard } from "./QuestionCard";
-import { AnswerSheet } from "./AnswerSheet";
 import { NavigationControls } from "./NavigationControls";
+import { ExcalidrawIFrame } from "./ExcalidrawIFrame";
 import logo from "../assets/logo.png";
+type ExcalidrawElement = { id: string; [key: string]: any };
 
 const theme = createTheme({
   typography: {
@@ -21,7 +22,7 @@ const theme = createTheme({
   },
   palette: {
     background: {
-      default: "#dcdcdc", // Darker desk background for contrast
+      default: "#dcdcdc",
     },
   },
   components: {
@@ -38,6 +39,11 @@ const theme = createTheme({
 export const ExamContainer: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
 
+  // State to hold drawings for each question
+  const [drawings, setDrawings] = useState<
+    Record<number, readonly ExcalidrawElement[]>
+  >({});
+
   const handleNext = () => {
     if (currentStep < questions.length) {
       setCurrentStep((prev) => prev + 1);
@@ -52,17 +58,23 @@ export const ExamContainer: React.FC = () => {
     }
   };
 
-  // Safe check for question data
+  const handleDrawingChange = (elements: any) => {
+    setDrawings((prev) => {
+      // Check if anything actually changed to avoid unnecessary state commits
+      if (prev[currentStep]?.length === elements.length) return prev;
+      return { ...prev, [currentStep]: elements };
+    });
+  };
+
   const currentQuestion: Question | undefined = questions[currentStep - 1];
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-
       <Box
         sx={{
           minHeight: "100vh",
-          pb: 12, // Space for footer
+          pb: 12,
           pt: 4,
           display: "flex",
           justifyContent: "center",
@@ -71,11 +83,6 @@ export const ExamContainer: React.FC = () => {
       >
         <Container maxWidth="xl">
           <Fade in={true} key={currentStep} timeout={600}>
-            {/* LAYOUT LOGIC:
-              - Flex Row on Desktop (md+)
-              - Flex Column on Mobile (xs)
-              - Gap between pages
-            */}
             <Box
               sx={{
                 display: "flex",
@@ -85,11 +92,11 @@ export const ExamContainer: React.FC = () => {
                 gap: { xs: 4, lg: 2 },
               }}
             >
-              {/* LEFT PAGE (Header or Question) */}
+              {/* LEFT PAGE */}
               <Box sx={{ width: "100%", maxWidth: "210mm" }}>
                 {currentStep === 0 ? (
                   <ExamHeader
-                    year={2025}
+                    year={2026}
                     subject="PHYSICS & MATHEMATICS"
                     totalMarks={100}
                     logoUrl={logo}
@@ -99,11 +106,17 @@ export const ExamContainer: React.FC = () => {
                 )}
               </Box>
 
-              {/* RIGHT PAGE (Answer Sheet) */}
-              {/* Only show Answer Sheet if we are NOT on the cover page */}
+              {/* RIGHT PAGE */}
               {currentStep > 0 && (
-                <Box sx={{ width: "100%", maxWidth: "210mm" }}>
-                  <AnswerSheet />
+                <Box
+                  key={`q-wrapper-${currentStep}`}
+                  sx={{ width: "100%", maxWidth: "210mm" }}
+                >
+                  <ExcalidrawIFrame
+                    questionId={currentStep}
+                    initialData={drawings[currentStep] || []}
+                    onChange={handleDrawingChange}
+                  />
                 </Box>
               )}
             </Box>
