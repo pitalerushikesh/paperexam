@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Box, Paper, Typography } from "@mui/material";
 
 interface ExcalidrawIFrameProps {
-  questionId: number;
+  questionId: string;
   initialData: any;
   onChange: (elements: any) => void;
 }
