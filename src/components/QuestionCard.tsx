@@ -3,12 +3,16 @@ import { Box, Paper, Typography, Chip, Divider } from "@mui/material";
 import type { Question } from "../utils/types";
 import { QuestionRenderer } from "./QuestionRenderer";
 
-interface QuestionCardProps extends Question {}
+// Add 'subject' to the props interface
+interface QuestionCardProps extends Question {
+  subject: string;
+}
 
 export const QuestionCard: React.FC<QuestionCardProps> = ({
   questionNumber,
   marks,
   content,
+  subject,
 }) => {
   return (
     <Paper
@@ -16,7 +20,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       sx={{
         width: "100%",
         maxWidth: "210mm",
-        height: "297mm", // Match A4 Height
+        height: "297mm",
         p: { xs: 3, md: 6 },
         position: "relative",
         display: "flex",
@@ -24,7 +28,30 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         backgroundColor: "#fff",
       }}
     >
-      {/* Question Header */}
+      {/* --- NEW SUPER-HEADER --- */}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          mb: 2,
+          pb: 1,
+          borderBottom: "1px dashed #ccc",
+        }}
+      >
+        <Typography
+          variant="subtitle2"
+          sx={{
+            fontWeight: 800,
+            letterSpacing: 1.5,
+            textTransform: "uppercase",
+            color: "text.secondary",
+          }}
+        >
+          MHTCET 2025 — {subject}
+        </Typography>
+      </Box>
+
+      {/* Existing Question Header (Number & Marks) */}
       <Box
         sx={{
           display: "flex",
