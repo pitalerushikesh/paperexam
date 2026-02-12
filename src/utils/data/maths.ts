@@ -3,502 +3,656 @@ import type { Question } from "../types";
 export const mathsQuestions: Question[] = [
   {
     questionNumber: 101,
-    marks: 1,
-    content: `In a triangle ABC, $BC=7$, $AC=8$, $AB=\alpha \in N$ and $\cos A = \frac{2}{3}$. If $49 \cos(3C) + 42 = \frac{m}{n}$ where $gcd(m,n)=1$, then $m+n$ is equal to:
+    marks: 2,
+    content: String.raw`
+In a triangle $ABC$, $BC = 7$, $AC = 8$, $AB = \alpha \in \mathbb{N}$ and $\cos A = \frac{2}{3}$.
+If $49 \cos(3C) + 42 = \frac{m}{n}$ where $\gcd(m, n) = 1$, then $m + n$ is equal to:
 
-(a) 38 \\
-(b) 39 \\
-(c) 37 \\
-(d) 36`,
+(a) 38  
+(b) 39  
+(c) 37  
+(d) 36
+`,
   },
+
   {
     questionNumber: 102,
-    marks: 1,
-    content: `Let the equation $x(x+2)(12-k)=2$ have equal roots. Then the distance of the point $(k, \frac{k}{2})$ from the line $3x+4y+5=0$ is:
+    marks: 2,
+    content: String.raw`
+Let the equation $x(x + 2)(12 - k) = 2$ have equal roots. Then the value of $k$ is:
 
-(a) 15 \\
-(b) $5\sqrt{3}$ \\
-(c) $15\sqrt{5}$ \\
-(d) 12`,
+(a) 12  
+(b) 14  
+(c) 10  
+(d) 16
+`,
   },
+
   {
     questionNumber: 103,
-    marks: 1,
-    content: `A circle C of radius 2 lies in the second quadrant and touches both the coordinate axes. Let r be the radius of a circle that has centre at the point (2, 5) and intersects the circle C at exactly two points. If the set of all possible values of r is the interval $(\alpha, \beta)$, then $3\beta-2\alpha$ is equal to:
+    marks: 2,
+    content: String.raw`
+If the mean and the standard deviation of the observations 2, 3, 3, 4, 5, 7, $a$, $b$ are 4 and $\sqrt{2}$ respectively, then the mean deviation about the mode is:
 
-(a) 15 \\
-(b) 225 \\
-(c) 14 \\
-(d) 196`,
+(a) 1  
+(b) 2  
+(c) 3/4  
+(d) 1/2
+`,
   },
+
   {
     questionNumber: 104,
-    marks: 1,
-    content: `Let the mean and the standard deviation of the observation 2, 3, 3, 4, 5, 7, a, b be 4 and $\sqrt{2}$ respectively. Then the mean deviation about the mode of these observations is:
+    marks: 2,
+    content: String.raw`
+The area of the region bounded by the curve $y = |x - 1|$ and $y = 1$ is:
 
-(a) 1 \\
-(b) $\frac{1}{2}$ \\
-(c) 2 \\
-(d) $\frac{3}{4}$`,
+(a) 1  
+(b) 2  
+(c) 1/2  
+(d) 4
+`,
   },
+
   {
     questionNumber: 105,
-    marks: 1,
-    content: `The probability of forming a 12 persons committee from 4 engineers, 2 doctors and 10 professors containing at least 3 engineers and at least 1 doctor, is:
+    marks: 2,
+    content: String.raw`
+The value of $\lim_{x \to 0} \frac{\log(1 + 3x)}{\sin 2x}$ is:
 
-(a) $\frac{129}{182}$ \\
-(b) $\frac{103}{182}$ \\
-(c) $\frac{17}{26}$ \\
-(d) $\frac{19}{26}$`,
+(a) 3/2  
+(b) 2/3  
+(c) 1  
+(d) 0
+`,
   },
+
   {
     questionNumber: 106,
-    marks: 1,
-    content: `In how many ways can a bowler take four wickets in a single 6-ball over?
+    marks: 2,
+    content: String.raw`
+If $\vec{a} = \hat{i} + 2\hat{j} + 3\hat{k}$ and $\vec{b} = 2\hat{i} - \hat{j} + \hat{k}$, then the projection of $\vec{a}$ on $\vec{b}$ is:
 
-(a) 6 \\
-(b) 15 \\
-(c) 20 \\
-(d) 30`,
+(a) $\frac{3}{\sqrt{6}}$  
+(b) $\frac{1}{\sqrt{6}}$  
+(c) $\frac{5}{\sqrt{6}}$  
+(d) $\frac{2}{\sqrt{6}}$
+`,
   },
+
   {
     questionNumber: 107,
-    marks: 1,
-    content: `Evaluate $\lim_{x\to0} \frac{x}{\sqrt{1+x}-\sqrt{1-x}}$:
+    marks: 2,
+    content: String.raw`
+The general solution of $\tan 3x = \cot x$ is:
 
-(a) 1 \\
-(b) 2 \\
-(c) -1 \\
-(d) -2`,
+(a) $(2n+1)\frac{\pi}{8}$  
+(b) $n\pi + \frac{\pi}{4}$  
+(c) $(2n+1)\frac{\pi}{4}$  
+(d) $n\pi + \frac{\pi}{8}$
+`,
   },
+
   {
     questionNumber: 108,
-    marks: 1,
-    content: `The domain of the function $f(x)=\frac{1}{\sqrt{9-x^2}}$ is:
+    marks: 2,
+    content: String.raw`
+The domain of the function $f(x)=\frac{1}{\sqrt{9-x^{2}}}$ is:
 
-(a) $-3 \le x \le 3$ \\
-(b) $-3 < x < 3$ \\
-(c) $-9 \le x \le 9$ \\
-(d) $-9 < x < 9$`,
+(a) $[-3, 3]$  
+(b) $(-3, 3)$  
+(c) $[-9, 9]$  
+(d) $(-9, 9)$
+`,
   },
+
   {
     questionNumber: 109,
-    marks: 1,
-    content: `The amplitude of $\sin\frac{\pi}{5} + i(1-\cos\frac{\pi}{5})$ is:
+    marks: 2,
+    content: String.raw`
+The amplitude of $\sin\frac{\pi}{5}+i(1-\cos\frac{\pi}{5})$ is:
 
-(a) $\frac{\pi}{5}$ \\
-(b) $\frac{\pi}{10}$ \\
-(c) $\frac{2\pi}{5}$ \\
-(d) $\frac{\pi}{15}$`,
+(a) $\frac{\pi}{5}$  
+(b) $\frac{\pi}{10}$  
+(c) $\frac{2\pi}{5}$  
+(d) $\frac{\pi}{15}$
+`,
   },
+
   {
     questionNumber: 110,
-    marks: 1,
-    content: `Let $f(x) = \frac{\sqrt{4+x}-2}{x}$, $x \neq 0$. If $f(x)$ is continuous at $x=0$, then $f(0) =$:
+    marks: 2,
+    content: String.raw`
+If $f(x)=\frac{\sqrt{4+x}-2}{x}, x\ne0$ is continuous at $x=0$, then $f(0)=$
 
-(a) $\frac{1}{2}$ \\
-(b) $\frac{1}{4}$ \\
-(c) 2 \\
-(d) $\frac{3}{2}$`,
+(a) 1/2  
+(b) 1/4  
+(c) 2  
+(d) 4
+`,
   },
   {
     questionNumber: 111,
-    marks: 1,
-    content: `If $A = \begin{bmatrix} \cos^2\theta & \sin\theta\cos\theta \\ \cos\theta\sin\theta & \sin^2\theta \end{bmatrix}$ and $B = \begin{bmatrix} \cos^2\phi & \sin\phi\cos\phi \\ \cos\phi\sin\phi & \sin^2\phi \end{bmatrix}$, then $AB=O$ if:
+    marks: 2,
+    content: String.raw`
+Let $A=\begin{bmatrix}\cos^{2}\theta & \sin\theta\cos\theta \\ \cos\theta\sin\theta & \sin^{2}\theta\end{bmatrix}$ and 
+$B=\begin{bmatrix}\cos^{2}\phi & \sin\phi\cos\phi \\ \cos\phi\sin\phi & \sin^{2}\phi\end{bmatrix}$.
+If $AB = 0$, then:
 
-(a) $\theta = n\phi, n=0,1,2...$ \\
-(b) $\theta + \phi = n\pi, n=0,1,2...$ \\
-(c) $\theta - \phi = (2n+1)\frac{\pi}{2}, n=0,1,2...$ \\
-(d) $\theta = \phi + \frac{n\pi}{2}, n=0,1,2...$`,
+(a) $\theta = n\phi$  
+(b) $\theta + \phi = n\pi$  
+(c) $\theta - \phi = (2n+1)\frac{\pi}{2}$  
+(d) $\theta = \phi$
+`,
   },
+
   {
     questionNumber: 112,
-    marks: 1,
-    content: `If A is a square matrix of order 3, then $|Adj. A| =$:
+    marks: 2,
+    content: String.raw`
+The shortest distance between the lines 
+$\frac{x-1}{2} = \frac{y-2}{3} = \frac{z-3}{4}$ and 
+$\frac{x-2}{3} = \frac{y-4}{4} = \frac{z-5}{5}$ is:
 
-(a) $|A|^{-1}$ \\
-(b) $|A|$ \\
-(c) $|A|^3$ \\
-(d) $|A|^2$`,
+(a) $\frac{1}{\sqrt{6}}$  
+(b) $\frac{1}{6}$  
+(c) $\frac{1}{\sqrt{3}}$  
+(d) 0
+`,
   },
+
   {
     questionNumber: 113,
-    marks: 1,
-    content: `For $A = \begin{bmatrix} 3 & 1 \\ -1 & 2 \end{bmatrix}$, then $14A^{-1}$ is given by:
+    marks: 2,
+    content: String.raw`
+If $A = \begin{bmatrix}1 & 2 \\ 3 & 4\end{bmatrix}$, then $A^{-1}$ is:
 
-(a) $14 \begin{bmatrix} 2 & -1 \\ 1 & 3 \end{bmatrix}$ \\
-(b) $\begin{bmatrix} 4 & -2 \\ 2 & 6 \end{bmatrix}$ \\
-(c) $2 \begin{bmatrix} 2 & -1 \\ 1 & -3 \end{bmatrix}$ \\
-(d) $2 \begin{bmatrix} -3 & -1 \\ 1 & -2 \end{bmatrix}$`,
+(a) $\begin{bmatrix}-2 & 1 \\ 1.5 & -0.5\end{bmatrix}$  
+(b) $\frac{-1}{2}\begin{bmatrix}4 & -2 \\ -3 & 1\end{bmatrix}$  
+(c) $\begin{bmatrix}4 & -2 \\ -3 & 1\end{bmatrix}$  
+(d) Does not exist
+`,
   },
+
   {
     questionNumber: 114,
-    marks: 1,
-    content: `$\int \frac{\sin^2x - \cos^2x}{\sin^2x \cos^2x} dx =$:
+    marks: 2,
+    content: String.raw`
+A circle $C$ of radius 2 lies in the second quadrant and touches both the coordinate axes. 
+The equation of the circle is:
 
-(a) $\tan x + \cot x + c$ \\
-(b) $\text{cosec } x + \sec x + c$ \\
-(c) $\tan x + \sec x + c$ \\
-(d) $\tan x + \text{cosec } x + c$`,
+(a) $(x-2)^2 + (y-2)^2 = 4$  
+(b) $(x+2)^2 + (y-2)^2 = 4$  
+(c) $(x+2)^2 + (y+2)^2 = 4$  
+(d) $x^2 + y^2 + 4x - 4y + 4 = 0$
+`,
   },
+
   {
     questionNumber: 115,
-    marks: 1,
-    content: `If $\\alpha$ and $\\beta$ are the roots of the equation $x^2 + px + q = 0$, then the value of $(\\alpha^2 + \\beta^2)$ is:
+    marks: 2,
+    content: String.raw`
+The value of $\int e^x (\sin x + \cos x)\, dx$ is:
 
-(a) $p^2 - 2q$ \\
-(b) $p^2 + 2q$ \\
-(c) $q^2 - 2p$ \\
-(d) $q^2 + 2p$`,
+(a) $e^x \sin x + C$  
+(b) $e^x \cos x + C$  
+(c) $e^x (\sin x - \cos x) + C$  
+(d) $e^x \tan x + C$
+`,
   },
+
   {
     questionNumber: 116,
-    marks: 1,
-    content: `The value of $\\int_0^{\\pi/2} \\frac{\\sin x}{\\sin x + \\cos x} dx$ is:
+    marks: 2,
+    content: String.raw`
+If $y = x^x$, then $\frac{dy}{dx}$ is:
 
-(a) $\\pi$ \\
-(b) $\\pi/2$ \\
-(c) $\\pi/4$ \\
-(d) 0`,
+(a) $x^x (1 + \log x)$  
+(b) $x^x \log x$  
+(c) $x \cdot x^{x-1}$  
+(d) $1 + \log x$
+`,
   },
+
   {
     questionNumber: 117,
-    marks: 1,
-    content: `The slope of the tangent to the curve $y = x^3 - x$ at $x = 2$ is:
+    marks: 2,
+    content: String.raw`
+The probability of obtaining a sum of 8 in a single throw of two dice is:
 
-(a) 11 \\
-(b) 12 \\
-(c) 13 \\
-(d) 10`,
+(a) $\frac{5}{36}$  
+(b) $\frac{1}{6}$  
+(c) $\frac{1}{9}$  
+(d) $\frac{7}{36}$
+`,
   },
+
   {
     questionNumber: 118,
-    marks: 1,
-    content: `If $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$ and $\\vec{b} = \\hat{i} - \\hat{j} + \\hat{k}$, then $\\vec{a} \\cdot \\vec{b}$ is:
+    marks: 2,
+    content: String.raw`
+The value of $k$ for which the lines $3x - 4y + 7 = 0$ and $kx + 3y - 5 = 0$ are perpendicular is:
 
-(a) 1 \\
-(b) 2 \\
-(c) 3 \\
-(d) 0`,
+(a) 3  
+(b) 4  
+(c) -3  
+(d) -4
+`,
   },
+
   {
     questionNumber: 119,
-    marks: 1,
-    content: `The eccentricity of the ellipse $\\frac{x^2}{25} + \\frac{y^2}{16} = 1$ is:
+    marks: 2,
+    content: String.raw`
+If $\omega$ is a complex cube root of unity, then $(1 + \omega - \omega^2)^3$ equals:
 
-(a) 3/5 \\
-(b) 4/5 \\
-(c) 9/25 \\
-(d) 1/5`,
+(a) -8  
+(b) 8  
+(c) 1  
+(d) 0
+`,
   },
+
   {
     questionNumber: 120,
-    marks: 1,
-    content: `The general solution of the differential equation $\\frac{dy}{dx} = e^{x-y}$ is:
+    marks: 2,
+    content: String.raw`
+The area of the triangle formed by the points $(0,0)$, $(3,0)$ and $(0,4)$ is:
 
-(a) $e^y = e^x + c$ \\
-(b) $e^x = e^y + c$ \\
-(c) $e^{x+y} = c$ \\
-(d) $y = x + c$`,
+(a) 12  
+(b) 6  
+(c) 7  
+(d) 5
+`,
   },
   {
     questionNumber: 121,
-    marks: 1,
-    content: `The value of $\\tan^{-1}(1) + \\cos^{-1}(-1/2) + \\sin^{-1}(-1/2)$ is:
+    marks: 2,
+    content: String.raw`
+The derivative of $\tan^{-1}\left(\frac{\cos x + \sin x}{\cos x - \sin x}\right)$ with respect to $x$ is:
 
-(a) $\\pi/4$ \\
-(b) $3\\pi/4$ \\
-(c) $2\\pi/3$ \\
-(d) $\\pi$`,
+(a) 0  
+(b) 1  
+(c) -1  
+(d) 1/2
+`,
   },
+
   {
     questionNumber: 122,
-    marks: 1,
-    content: `The area of the region bounded by the curve $y = x^2$ and the line $y = 4$ is:
+    marks: 2,
+    content: String.raw`
+The maximum value of $f(x) = \sin x + \cos x$ is:
 
-(a) 32/3 \\
-(b) 16/3 \\
-(c) 8/3 \\
-(d) 4`,
+(a) 1  
+(b) 2  
+(c) $\sqrt{2}$  
+(d) $\frac{1}{\sqrt{2}}$
+`,
   },
+
   {
     questionNumber: 123,
-    marks: 1,
-    content: `The distance of the point (1, 2, 3) from the origin is:
+    marks: 2,
+    content: String.raw`
+The solution set of the inequality $x^2 - 5x + 6 < 0$ is:
 
-(a) $\\sqrt{14}$ \\
-(b) 6 \\
-(c) $\\sqrt{6}$ \\
-(d) 14`,
+(a) $(2,3)$  
+(b) $[2,3]$  
+(c) $(-\infty,2) \cup (3,\infty)$  
+(d) $(2,\infty)$
+`,
   },
+
   {
     questionNumber: 124,
-    marks: 1,
-    content: `If $P(A) = 0.4$, $P(B) = 0.8$ and $P(B|A) = 0.6$, then $P(A \\cup B)$ is:
+    marks: 2,
+    content: String.raw`
+The value of $\int_0^1 \frac{1}{1+x^2} dx$ is:
 
-(a) 0.96 \\
-(b) 0.24 \\
-(c) 0.56 \\
-(d) 0.84`,
+(a) $\frac{\pi}{4}$  
+(b) $\frac{\pi}{2}$  
+(c) $\pi$  
+(d) 1
+`,
   },
+
   {
     questionNumber: 125,
-    marks: 1,
-    content: `The derivative of $\\log(\\sin x)$ with respect to $x$ is:
+    marks: 2,
+    content: String.raw`
+If vector $\vec{a}$ is perpendicular to $\vec{b}$, then $\vec{a} \cdot \vec{b} =$  
 
-(a) $\\cot x$ \\
-(b) $\\tan x$ \\
-(c) $\\frac{1}{\\sin x}$ \\
-(d) $-\\cot x$`,
+(a) 1  
+(b) 0  
+(c) -1  
+(d) $|\vec{a}|\,|\vec{b}|$
+`,
   },
+
   {
     questionNumber: 126,
-    marks: 1,
-    content: `The value of $\\begin{vmatrix} 1 & 2 & 3 \\\\ 0 & 4 & 5 \\\\ 0 & 0 & 6 \\end{vmatrix}$ is:
+    marks: 2,
+    content: String.raw`
+The general solution of the differential equation $\frac{dy}{dx} = \frac{y}{x}$ is:
 
-(a) 24 \\
-(b) 0 \\
-(c) 10 \\
-(d) 15`,
+(a) $y = cx$  
+(b) $x = cy$  
+(c) $xy = c$  
+(d) $y = cx^2$
+`,
   },
+
   {
     questionNumber: 127,
-    marks: 1,
-    content: `The sum of the first 20 terms of the AP 2, 4, 6, ... is:
+    marks: 2,
+    content: String.raw`
+The contrapositive of the statement "If it rains, then I will stay at home" is:
 
-(a) 420 \\
-(b) 400 \\
-(c) 380 \\
-(d) 440`,
+(a) If I do not stay at home, then it did not rain  
+(b) If I stay at home, then it rains  
+(c) If it does not rain, I will not stay at home  
+(d) It rains and I do not stay at home
+`,
   },
+
   {
     questionNumber: 128,
-    marks: 1,
-    content: `The angle between the lines $y = x$ and $y = \\sqrt{3}x$ is:
+    marks: 2,
+    content: String.raw`
+The value of $\sin^2 25^\circ + \sin^2 65^\circ$ is:
 
-(a) $15^\\circ$ \\
-(b) $30^\\circ$ \\
-(c) $45^\\circ$ \\
-(d) $60^\\circ$`,
+(a) 0  
+(b) 1  
+(c) 2  
+(d) 1/2
+`,
   },
+
   {
     questionNumber: 129,
-    marks: 1,
-    content: `The coordinates of the focus of the parabola $y^2 = 12x$ are:
+    marks: 2,
+    content: String.raw`
+The locus of a point which is equidistant from the points $(1,2)$ and $(3,4)$ is:
 
-(a) (3, 0) \\
-(b) (0, 3) \\
-(c) (-3, 0) \\
-(d) (0, -3)`,
+(a) $x + y = 5$  
+(b) $x - y = 5$  
+(c) $x + y = 0$  
+(d) $2x + 2y = 7$
+`,
   },
+
   {
     questionNumber: 130,
-    marks: 1,
-    content: `If $f(x) = x^2 + 2x + 1$, then $f'(1)$ is:
+    marks: 2,
+    content: String.raw`
+The order and degree of the differential equation 
+$\frac{d^2y}{dx^2} = \sqrt{1 + \left(\frac{dy}{dx}\right)^2}$ are:
 
-(a) 4 \\
-(b) 3 \\
-(c) 2 \\
-(d) 1`,
+(a) 2, 1  
+(b) 2, 2  
+(c) 1, 2  
+(d) 2, undefined
+`,
   },
   {
     questionNumber: 131,
-    marks: 1,
-    content: `The value of $\\sin(2\\sin^{-1} 0.6)$ is:
+    marks: 2,
+    content: String.raw`
+If $P(A) = 0.3$, $P(B) = 0.4$, and $A$ and $B$ are mutually exclusive, then $P(A \cup B)$ is:
 
-(a) 0.96 \\
-(b) 0.48 \\
-(c) 1.2 \\
-(d) 0.36`,
+(a) 0.12  
+(b) 0.7  
+(c) 0.1  
+(d) 0.5
+`,
   },
+
   {
     questionNumber: 132,
-    marks: 1,
-    content: `The radius of the circle $x^2 + y^2 - 4x - 6y - 12 = 0$ is:
+    marks: 2,
+    content: String.raw`
+The slope of the normal to the curve $y = 2x^2 + 3\sin x$ at $x = 0$ is:
 
-(a) 5 \\
-(b) 25 \\
-(c) $\\sqrt{13}$ \\
-(d) 7`,
+(a) 3  
+(b) -3  
+(c) 1/3  
+(d) -1/3
+`,
   },
+
   {
     questionNumber: 133,
-    marks: 1,
-    content: `The value of $\\lim_{x \\to 0} \\frac{\\sin 5x}{x}$ is:
+    marks: 2,
+    content: String.raw`
+The value of $\cos(\sin^{-1} x + \cos^{-1} x)$ for $|x| \le 1$ is:
 
-(a) 5 \\
-(b) 1 \\
-(c) 0 \\
-(d) 1/5`,
+(a) 1  
+(b) 0  
+(c) -1  
+(d) x
+`,
   },
+
   {
     questionNumber: 134,
-    marks: 1,
-    content: `If $A = \\{1, 2, 3\\}$ and $B = \\{3, 4, 5\\}$, then $A \\cap B$ is:
+    marks: 2,
+    content: String.raw`
+The equation of the plane passing through $(1,1,1)$ and parallel to the plane $2x + 3y + 4z = 5$ is:
 
-(a) $\\{3\\}$ \\
-(b) $\\{1, 2, 3, 4, 5\\}$ \\
-(c) $\\{1, 2\\}$ \\
-(d) $\\phi$`,
+(a) $2x + 3y + 4z = 9$  
+(b) $2x + 3y + 4z = 0$  
+(c) $x + y + z = 3$  
+(d) $2x + 3y + 4z = 5$
+`,
   },
+
   {
     questionNumber: 135,
-    marks: 1,
-    content: `The order of the differential equation $\\frac{d^2y}{dx^2} + (\\frac{dy}{dx})^3 + y = 0$ is:
+    marks: 2,
+    content: String.raw`
+If $\begin{vmatrix} x & 2 \\ 18 & x \end{vmatrix} = 
+\begin{vmatrix} 6 & 2 \\ 18 & 6 \end{vmatrix}$, then $x$ is equal to:
 
-(a) 2 \\
-(b) 3 \\
-(c) 1 \\
-(d) 0`,
+(a) 6  
+(b) $\pm 6$  
+(c) -6  
+(d) 0
+`,
   },
+
   {
     questionNumber: 136,
-    marks: 1,
-    content: `The projection of vector $\\vec{a} = 2\\hat{i} + 3\\hat{j}$ on $\\hat{i}$ is:
+    marks: 2,
+    content: String.raw`
+The distance of the point $P(2,3,4)$ from the x-axis is:
 
-(a) 2 \\
-(b) 3 \\
-(c) $\\sqrt{13}$ \\
-(d) 0`,
+(a) 5  
+(b) $\sqrt{13}$  
+(c) 2  
+(d) $\sqrt{29}$
+`,
   },
+
   {
     questionNumber: 137,
-    marks: 1,
-    content: `The value of $i^{25}$ is:
+    marks: 2,
+    content: String.raw`
+The negation of the statement "All natural numbers are integers" is:
 
-(a) $i$ \\
-(b) $-i$ \\
-(c) 1 \\
-(d) -1`,
+(a) Some natural numbers are not integers  
+(b) No natural number is an integer  
+(c) All integers are natural numbers  
+(d) Some integers are not natural numbers
+`,
   },
+
   {
     questionNumber: 138,
-    marks: 1,
-    content: `The direction cosines of the z-axis are:
+    marks: 2,
+    content: String.raw`
+The value of $\int_{-\pi/2}^{\pi/2} \sin^7 x\, dx$ is:
 
-(a) (0, 0, 1) \\
-(b) (1, 0, 0) \\
-(c) (0, 1, 0) \\
-(d) (1, 1, 1)`,
+(a) 1  
+(b) 0  
+(c) 2  
+(d) -1
+`,
   },
+
   {
     questionNumber: 139,
-    marks: 1,
-    content: `The number of subsets of a set containing 3 elements is:
+    marks: 2,
+    content: String.raw`
+If line $y = mx + 1$ is tangent to the parabola $y^2 = 4x$, then $m$ is:
 
-(a) 8 \\
-(b) 3 \\
-(c) 6 \\
-(d) 9`,
+(a) 1  
+(b) 2  
+(c) 3  
+(d) 4
+`,
   },
+
   {
     questionNumber: 140,
-    marks: 1,
-    content: `The midpoint of the line segment joining (2, 4) and (6, 8) is:
+    marks: 2,
+    content: String.raw`
+The principal solution of $\cos x = \frac{1}{2}$ is:
 
-(a) (4, 6) \\
-(b) (8, 12) \\
-(c) (2, 2) \\
-(d) (4, 4)`,
+(a) $\pi/3, 5\pi/3$  
+(b) $\pi/6, 11\pi/6$  
+(c) $\pi/4, 7\pi/4$  
+(d) $\pi/3, 2\pi/3$
+`,
   },
   {
     questionNumber: 141,
-    marks: 1,
-    content: `The value of $\\log_2 32$ is:
+    marks: 2,
+    content: String.raw`
+If $y = e^{\tan x}$, then $\frac{dy}{dx}$ at $x = 0$ is:
 
-(a) 5 \\
-(b) 4 \\
-(c) 16 \\
-(d) 2`,
+(a) 0  
+(b) 1  
+(c) e  
+(d) 2
+`,
   },
+
   {
     questionNumber: 142,
-    marks: 1,
-    content: `If $y = e^{2x}$, then $\\frac{dy}{dx}$ is:
+    marks: 2,
+    content: String.raw`
+The acute angle between the planes $2x - y + z = 6$ and $x + y + 2z = 3$ is:
 
-(a) $2e^{2x}$ \\
-(b) $e^{2x}$ \\
-(c) $\\frac{1}{2}e^{2x}$ \\
-(d) $2x e^{2x-1}$`,
+(a) $\pi/3$  
+(b) $\pi/4$  
+(c) $\pi/6$  
+(d) $\pi/2$
+`,
   },
+
   {
     questionNumber: 143,
-    marks: 1,
-    content: `The value of $\\cos 120^\\circ$ is:
+    marks: 2,
+    content: String.raw`
+The value of $\log_{10} 10 + \log_{10} 100 + \log_{10} 1000$ is:
 
-(a) -1/2 \\
-(b) 1/2 \\
-(c) $-\\sqrt{3}/2$ \\
-(d) $\\sqrt{3}/2$`,
+(a) 3  
+(b) 6  
+(c) 1110  
+(d) 10
+`,
   },
+
   {
     questionNumber: 144,
-    marks: 1,
-    content: `The identity matrix of order 2 is:
+    marks: 2,
+    content: String.raw`
+If $f: \mathbb{R} \to \mathbb{R}$ is defined by $f(x) = 3x - 4$, then $f^{-1}(x)$ is:
 
-(a) $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$ \\
-(b) $\\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}$ \\
-(c) $\\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix}$ \\
-(d) $\\begin{bmatrix} 1 & 0 \\\\ 0 & 0 \\end{bmatrix}$`,
+(a) $\frac{x+4}{3}$  
+(b) $\frac{x-4}{3}$  
+(c) $3x+4$  
+(d) $\frac{1}{3x-4}$
+`,
   },
+
   {
     questionNumber: 145,
-    marks: 1,
-    content: `The distance between points (1, 2) and (4, 6) is:
+    marks: 2,
+    content: String.raw`
+The feasible region for an LPP is shown in the figure. The objective function $Z = 4x + 3y$ will be maximum at:
 
-(a) 5 \\
-(b) 7 \\
-(c) 25 \\
-(d) $\\sqrt{7}$`,
+(a) (0, 0)  
+(b) Corner point with maximum coordinates  
+(c) (0, 5)  
+(d) (5, 0)
+`,
   },
+
   {
     questionNumber: 146,
-    marks: 1,
-    content: `The value of $5!$ is:
+    marks: 2,
+    content: String.raw`
+If $\vec{a}$ and $\vec{b}$ are unit vectors such that $|\vec{a} + \vec{b}| = 1$, then $|\vec{a} - \vec{b}|$ is:
 
-(a) 120 \\
-(b) 60 \\
-(c) 24 \\
-(d) 720`,
+(a) 1  
+(b) $\sqrt{3}$  
+(c) $\sqrt{2}$  
+(d) 2
+`,
   },
+
   {
     questionNumber: 147,
-    marks: 1,
-    content: `If $\\sin \\theta = 1/2$, then the principal value of $\\theta$ is:
+    marks: 2,
+    content: String.raw`
+The value of $\frac{d}{dx}(e^{3\log x})$ is:
 
-(a) $\\pi/6$ \\
-(b) $\\pi/3$ \\
-(c) $\\pi/4$ \\
-(d) $\\pi/2$`,
+(a) $3x^2$  
+(b) $x^3$  
+(c) $3e^{3\log x}$  
+(d) $3x$
+`,
   },
+
   {
     questionNumber: 148,
-    marks: 1,
-    content: `The slope of a horizontal line is:
+    marks: 2,
+    content: String.raw`
+The equation of the circle concentric with $x^2 + y^2 - 6x + 4y - 12 = 0$ and passing through $(-2,2)$ is:
 
-(a) 0 \\
-(b) 1 \\
-(c) Undefined \\
-(d) -1`,
+(a) $x^2 + y^2 - 6x + 4y - 20 = 0$  
+(b) $x^2 + y^2 - 6x + 4y + 12 = 0$  
+(c) $x^2 + y^2 - 6x + 4y - 32 = 0$  
+(d) $x^2 + y^2 + 6x - 4y - 12 = 0$
+`,
   },
+
   {
     questionNumber: 149,
-    marks: 1,
-    content: `The modulus of $3 + 4i$ is:
+    marks: 2,
+    content: String.raw`
+If $y = \sin x$, then $y'' + y$ is equal to:
 
-(a) 5 \\
-(b) 7 \\
-(c) 25 \\
-(d) $\\sqrt{7}$`,
+(a) 0  
+(b) 1  
+(c) $2\sin x$  
+(d) $-2\sin x$
+`,
   },
+
   {
     questionNumber: 150,
-    marks: 1,
-    content: `The value of $\\int 1 dx$ is:
+    marks: 2,
+    content: String.raw`
+The volume of a cube is increasing at a rate of $8\,cm^3/s$. 
+How fast is the surface area increasing when the length of an edge is 12 cm?
 
-(a) $x + c$ \\
-(b) $c$ \\
-(c) $1 + c$ \\
-(d) $x^2/2 + c$`,
+(a) $8/3\,cm^2/s$  
+(b) $4/3\,cm^2/s$  
+(c) $2/3\,cm^2/s$  
+(d) $1\,cm^2/s$
+`,
   },
 ];

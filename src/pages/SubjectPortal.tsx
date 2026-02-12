@@ -1,24 +1,24 @@
 import React from "react";
 import { Box, Typography, Grid, Card, CardActionArea } from "@mui/material";
-import { Science, Biotech, Calculate } from "@mui/icons-material";
+import { Science, Calculate, ScienceOutlined } from "@mui/icons-material";
 
 const subjects = [
   {
     id: "physics",
     title: "Physics",
-    icon: <Science fontSize="large" />,
+    icon: <Science sx={{ fontSize: 40 }} />,
     color: "#00bcd4",
   },
   {
     id: "chemistry",
     title: "Chemistry",
-    icon: <Biotech fontSize="large" />,
+    icon: <ScienceOutlined sx={{ fontSize: 40 }} />, // 👈 microscope-style icon
     color: "#9c27b0",
   },
   {
     id: "maths",
     title: "Maths",
-    icon: <Calculate fontSize="large" />,
+    icon: <Calculate sx={{ fontSize: 40 }} />,
     color: "#ff9800",
   },
 ];

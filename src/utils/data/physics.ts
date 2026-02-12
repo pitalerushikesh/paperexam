@@ -35,7 +35,7 @@ export const physicsQuestions: Question[] = [
     questionNumber: 4,
     marks: 1,
     content: `For a perfect gas, two pressures $P_1$ and $P_2$ are shown in the volume (V) vs Temperature (T) graph. The graph shows: \\
-    [[IMAGE:https://i.ibb.co/jvNXBQTw/4-phys-2025.png]]
+    [[IMAGE:https://i.ibb.co/p6rCHT01/4-phys-2025.png]]
 
 (a) $P_1 > P_2$ \\
 (b) $P_1 < P_2$ \\
@@ -65,7 +65,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 7,
     marks: 1,
-    content: `As shown in the figure, a metallic rod of linear density $0.45~kg~m^{-1}$ is lying horizontally on a smooth incline plane which makes an angle of $45^\\circ$ with the horizontal. The minimum current flowing in the rod required to keep it stationary, when 0.15 T magnetic field is acting on it in the vertical upward direction, will be: $\{Use~g=10~m/s^2\}$
+    content: `As shown in the figure, a metallic rod of linear density $0.45~kg~m^{-1}$ is lying horizontally on a smooth incline plane which makes an angle of $45^\\circ$ with the horizontal. The minimum current flowing in the rod required to keep it stationary, when 0.15 T magnetic field is acting on it in the vertical upward direction, will be: $\{Use~g=10~m/s^2\}$ \\
+    [[IMAGE:https://i.ibb.co/bg6S5gCH/7-phys-2025.png]]
 
 (a) 30 A \\
 (b) 15 A \\
@@ -85,7 +86,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 9,
     marks: 1,
-    content: `Two point charges -q and +q are placed at a distance of L. The magnitude of electric field intensity at a distance $R(R>>L)$ varies as:
+    content: `Two point charges -q and +q are placed at a distance of L. The magnitude of electric field intensity at a distance $R(R>>L)$ varies as: \\
+    [[IMAGE:https://i.ibb.co/DgGFHhwv/9-phys-2025.png]]
 
 (a) $\\frac{1}{R^3}$ \\
 (b) $\\frac{1}{R^4}$ \\
@@ -115,7 +117,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 12,
     marks: 1,
-    content: `The current i in the part of the electric circuit shown is:
+    content: `The current i in the part of the electric circuit shown is: \\
+    [[IMAGE:https://i.ibb.co/p62JtpDs/12-phys-2025.png]]
 
 (a) 1.7 amp \\
 (b) 3.7 amp \\
@@ -165,7 +168,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 17,
     marks: 1,
-    content: `Two processes A and B are shown for a gas. If $\\Delta Q_A$ and $\\Delta Q_B$ are heat absorbed, and $\\Delta U_A$ and $\\Delta U_B$ are changes in internal energies, then:
+    content: `Two processes A and B are shown for a gas. If $\\Delta Q_A$ and $\\Delta Q_B$ are heat absorbed, and $\\Delta U_A$ and $\\Delta U_B$ are changes in internal energies, then: \\
+    [[IMAGE:https://i.ibb.co/DH8Sjkwc/17-phys-2025.png]]
 
 (a) $\\Delta Q_A < \\Delta Q_B, \\Delta U_A < \\Delta U_B$ \\
 (b) $\\Delta Q_A > \\Delta Q_B, \\Delta U_A > \\Delta U_B$ \\
@@ -215,7 +219,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 22,
     marks: 1,
-    content: `A Wheatstone bridge has arms as shown. Calculate current through the 15 $\\Omega$ galvanometer (BD) with 10 V across AC.
+    content: `A Wheatstone bridge has arms as shown. Calculate current through the 15 $\\Omega$ galvanometer (BD) with 10 V across AC. \\
+    [[IMAGE:https://i.ibb.co/tMTdct0B/22-phys-2025.png]]
 
 (a) 2.44 $\\mu A$ \\
 (b) 4.87 $\\mu A$ \\
@@ -225,7 +230,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 23,
     marks: 1,
-    content: `Net impedance of the circuit shown (L = $50/\\pi$ mH, C = $10^3/\\pi$ $\\mu F$, R = 10 $\\Omega$, 220 V, 50 Hz) will be:
+    content: `Net impedance of the circuit shown (L = $50/\\pi$ mH, C = $10^3/\\pi$ $\\mu F$, R = 10 $\\Omega$, 220 V, 50 Hz) will be: \\
+    [[IMAGE:https://i.ibb.co/B2cFt7yq/23-phys-2025.png]]
 
 (a) $10\\sqrt{2}~\\Omega$ \\
 (b) 15 $\\Omega$ \\
@@ -275,7 +281,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 28,
     marks: 1,
-    content: `In double slit experiment, source is shifted at an angle above SQ. Position of central bright fringe will be:
+    content: `In double slit experiment, source is shifted at an angle above SQ. Position of central bright fringe will be: \\
+    [[IMAGE:https://i.ibb.co/5XMMBddK/28-phys-2025.png]]
 
 (a) at $O'$ \\
 (b) at O \\
@@ -355,7 +362,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 36,
     marks: 1,
-    content: `Energy level transition corresponding to shortest wavelength emission is:
+    content: `Energy level transition corresponding to shortest wavelength emission is: \\
+    [[IMAGE:https://i.ibb.co/v4RdddzZ/36-phys-2025.png]]
 
 (a) C \\
 (b) D \\
@@ -365,7 +373,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 37,
     marks: 1,
-    content: `Voltage waveforms of inputs A, B and output Y show logic gate is:
+    content: `Voltage waveforms of inputs A, B and output Y show logic gate is: \\
+    [[IMAGE:https://i.ibb.co/YTyHq4c0/37-phys-2025.png]]
 
 (a) AND gate \\
 (b) OR gate \\
@@ -417,7 +426,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 42,
     marks: 1,
-    content: `In YDSE, slit separation d such that first minima is directly in front of $S_1$ is:
+    content: `In YDSE, slit separation d such that first minima is directly in front of $S_1$ is: \\
+    [[IMAGE:https://i.ibb.co/YTfzkKzh/42-phys-2025.png]]
 
 (a) $\\frac{\\lambda}{2(\\sqrt{5}-2)}$ \\
 (b) $\\frac{\\lambda}{(\\sqrt{5}-2)}$ \\
