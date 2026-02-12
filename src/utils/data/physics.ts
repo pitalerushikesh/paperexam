@@ -34,7 +34,8 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 4,
     marks: 1,
-    content: `For a perfect gas, two pressures $P_1$ and $P_2$ are shown in the volume (V) vs Temperature (T) graph. The graph shows:
+    content: `For a perfect gas, two pressures $P_1$ and $P_2$ are shown in the volume (V) vs Temperature (T) graph. The graph shows: \\
+    [[IMAGE:https://i.ibb.co/jvNXBQTw/4-phys-2025.png]]
 
 (a) $P_1 > P_2$ \\
 (b) $P_1 < P_2$ \\
