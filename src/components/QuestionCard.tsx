@@ -86,7 +86,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         </Box>
 
         <Chip
-          label={`${marks} MARKS`}
+          label={subject === "maths" ? `${marks} MARKS` : `${marks} MARK`}
           variant="outlined"
           sx={{
             borderRadius: 1,
