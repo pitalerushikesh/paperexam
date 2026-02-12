@@ -112,7 +112,7 @@ export const ExamContainer: React.FC = () => {
               <Box sx={{ width: "100%", maxWidth: "210mm" }}>
                 {currentStep === 0 ? (
                   <ExamHeader
-                    year={2026}
+                    year={2025}
                     subject={selectedSubject.toUpperCase()}
                     totalMarks={currentQuestions.length * 2}
                     logoUrl={logo}
