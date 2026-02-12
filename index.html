@@ -12,5 +12,9 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Excalidraw and its dependencies sometimes look for 'global'
+      window.global = window;
+    </script>
   </body>
 </html>

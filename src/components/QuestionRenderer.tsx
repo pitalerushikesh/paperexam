@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
+import { injectDriveImages } from "../utils/helper";
 
 interface QuestionRendererProps {
   content: string;
@@ -12,6 +13,11 @@ interface QuestionRendererProps {
 export const QuestionRenderer: React.FC<QuestionRendererProps> = ({
   content,
 }) => {
+  // Process the content to convert [[IMAGE:..]] to markdown images
+  const processedContent = React.useMemo(
+    () => injectDriveImages(content),
+    [content],
+  );
   return (
     <Box
       sx={{
@@ -42,7 +48,7 @@ export const QuestionRenderer: React.FC<QuestionRendererProps> = ({
         remarkPlugins={[remarkMath]}
         rehypePlugins={[rehypeKatex, rehypeRaw]}
       >
-        {content}
+        {processedContent}
       </ReactMarkdown>
     </Box>
   );

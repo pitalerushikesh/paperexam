@@ -6,14 +6,16 @@ import {
   Box,
   Fade,
   Container,
+  Typography,
 } from "@mui/material";
-import type { Question } from "../utils/types"; // Type-only import
-import { questions } from "../utils/data";
+
 import { ExamHeader } from "./ExamHeader";
 import { QuestionCard } from "./QuestionCard";
-import { AnswerSheet } from "./AnswerSheet";
 import { NavigationControls } from "./NavigationControls";
+import { ExcalidrawIFrame } from "./ExcalidrawIFrame";
 import logo from "../assets/logo.png";
+import { SubjectPortal } from "../pages/SubjectPortal";
+import { QUESTION_BANK } from "../utils/data";
 
 const theme = createTheme({
   typography: {
@@ -21,7 +23,7 @@ const theme = createTheme({
   },
   palette: {
     background: {
-      default: "#dcdcdc", // Darker desk background for contrast
+      default: "#dcdcdc",
     },
   },
   components: {
@@ -36,74 +38,108 @@ const theme = createTheme({
 });
 
 export const ExamContainer: React.FC = () => {
+  const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
   const [currentStep, setCurrentStep] = useState(0);
 
+  // Use a string key for drawings to keep subjects separate: e.g., "physics-1"
+  const [drawings, setDrawings] = useState<Record<string, any>>({});
+
+  // 1. Direct access: Get the specific array for the selected subject
+  // If no subject is selected, it defaults to an empty array
+  const currentQuestions = selectedSubject
+    ? QUESTION_BANK[selectedSubject]
+    : [];
+
+  // Handle returning to the selection screen
+  if (!selectedSubject) {
+    return <SubjectPortal onSelect={(sub) => setSelectedSubject(sub)} />;
+  }
+
   const handleNext = () => {
-    if (currentStep < questions.length) {
+    if (currentStep < currentQuestions.length) {
       setCurrentStep((prev) => prev + 1);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
   const handlePrev = () => {
-    if (currentStep > 0) {
+    if (currentStep === 0) {
+      setSelectedSubject(null); // Go back to subject selection cards
+    } else {
       setCurrentStep((prev) => prev - 1);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
-  // Safe check for question data
-  const currentQuestion: Question | undefined = questions[currentStep - 1];
+  // Get the current question object
+  const currentQuestion = currentQuestions[currentStep - 1];
+
+  // Generate a unique key for the drawing storage
+  const drawingKey = `${selectedSubject}-${currentStep}`;
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-
       <Box
         sx={{
           minHeight: "100vh",
-          pb: 12, // Space for footer
+          pb: 12,
           pt: 4,
           display: "flex",
           justifyContent: "center",
-          overflowX: "hidden",
         }}
       >
         <Container maxWidth="xl">
-          <Fade in={true} key={currentStep} timeout={600}>
-            {/* LAYOUT LOGIC:
-              - Flex Row on Desktop (md+)
-              - Flex Column on Mobile (xs)
-              - Gap between pages
-            */}
+          {/* Header branding on top of exam */}
+          <Typography
+            variant="h6"
+            textAlign="center"
+            sx={{ mb: 2, opacity: 0.5 }}
+          >
+            LearnOpediA – {selectedSubject.toUpperCase()}
+          </Typography>
+
+          <Fade in={true} key={drawingKey} timeout={600}>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: { xs: "column", lg: "row" },
-                alignItems: { xs: "center", lg: "flex-start" },
+                gap: 2,
                 justifyContent: "center",
-                gap: { xs: 4, lg: 2 },
               }}
             >
-              {/* LEFT PAGE (Header or Question) */}
+              {/* LEFT: QUESTION */}
               <Box sx={{ width: "100%", maxWidth: "210mm" }}>
                 {currentStep === 0 ? (
                   <ExamHeader
-                    year={2025}
-                    subject="PHYSICS & MATHEMATICS"
-                    totalMarks={100}
+                    year={2026}
+                    subject={selectedSubject.toUpperCase()}
+                    totalMarks={currentQuestions.length * 2}
                     logoUrl={logo}
                   />
                 ) : (
-                  currentQuestion && <QuestionCard {...currentQuestion} />
+                  currentQuestion && (
+                    <QuestionCard
+                      subject={selectedSubject}
+                      {...currentQuestion}
+                    />
+                  )
                 )}
               </Box>
 
-              {/* RIGHT PAGE (Answer Sheet) */}
-              {/* Only show Answer Sheet if we are NOT on the cover page */}
+              {/* RIGHT: EXCALIDRAW (Only if not on header page) */}
               {currentStep > 0 && (
                 <Box sx={{ width: "100%", maxWidth: "210mm" }}>
-                  <AnswerSheet />
+                  <ExcalidrawIFrame
+                    questionId={drawingKey} // Unique ID per subject
+                    initialData={drawings[drawingKey] || []}
+                    onChange={(elements) => {
+                      setDrawings((prev) => ({
+                        ...prev,
+                        [drawingKey]: elements,
+                      }));
+                    }}
+                  />
                 </Box>
               )}
             </Box>
@@ -112,7 +148,7 @@ export const ExamContainer: React.FC = () => {
 
         <NavigationControls
           currentStep={currentStep}
-          totalQuestions={questions.length}
+          totalQuestions={currentQuestions.length}
           onNext={handleNext}
           onPrev={handlePrev}
           onStart={handleNext}
