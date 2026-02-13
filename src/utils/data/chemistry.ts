@@ -106,10 +106,10 @@ export const chemistryQuestions: Question[] = [
     marks: 1,
     content: `Halogenation of which one of the following will yield m-substituted product with respect to methyl group as a major product?
 
-(a) Toluene ($C_6H_5CH_3$) \\
-(b) Ethylbenzene \\
-(c) $C_6H_5CH_2CH_3$ with light \\
-(d) Structure containing $NO_2$ group (Refer to original image for structures)`,
+(a) [[IMAGE:https://i.ibb.co/zVjGkFnX/61-chem-2025-opt-a.png|150]]
+(b) [[IMAGE:https://i.ibb.co/N6ghhgB3/61-chem-2025-opt-b.png|150]] 
+(c) [[IMAGE:https://i.ibb.co/8DXHRYwT/61-chem-2025-opt-c.png|150]] 
+(d) [[IMAGE:https://i.ibb.co/j9gxNS0V/61-chem-2025-opt-d.png|150]]`,
   },
   {
     questionNumber: 62,
@@ -124,8 +124,8 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 63,
     marks: 1,
-    content: `The correct order of stability of following carbocations is:
-
+    content: `The correct order of stability of following carbocations is: \\
+ [[IMAGE:https://i.ibb.co/NdVYfjVF/63-chem-2025.png|500]]
 (a) $A>B>C>D$ \\
 (b) $B>C>A>D$ \\
 (c) $C>B>A>D$ \\
@@ -254,27 +254,29 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 76,
     marks: 1,
-    content: `The structure of the major product formed in the reaction of anisole with HI is:
-
-(a) Phenol and Methyl Iodide \\
-(b) Iodobenzene and Methanol \\
-(c) Phenol and Methanol \\
-(d) Iodobenzene and Methyl Iodide`,
+    content: `The structure of the major product formed in the reaction of anisole with HI is: \\
+[[IMAGE:https://i.ibb.co/dJj56kHs/76-chem-2025.png|300]]
+(a) [[IMAGE:https://i.ibb.co/tyC5Lsk/76-chem-2025-opt-a.png|150]] \\
+(b) [[IMAGE:https://i.ibb.co/YFdVBy1s/76-chem-2025-opt-b.png|150]] \\
+(c) [[IMAGE:https://i.ibb.co/BK4KtHKZ/76-chem-2025-opt-c.png|150]] \\
+(d) [[IMAGE:https://i.ibb.co/8DQFPdbv/76-chem-2025-opt-d.png|150]]`,
   },
   {
     questionNumber: 77,
     marks: 1,
-    content: `Major product formed in the reaction of t-butyl methyl ether with HI is a mixture of:
+    content: `Major product formed in the reaction of t-butyl methyl ether with HI is a mixture of: \\
+    [[IMAGE:https://i.ibb.co/M5SshS8c/77-chem-2025.png|300]]
 
-(a) Methyl alcohol and t-butyl iodide \\
-(b) Methyl iodide and t-butyl alcohol \\
-(c) Methyl iodide and t-butyl iodide \\
-(d) Methyl alcohol and t-butyl alcohol`,
+(a) [[IMAGE:https://i.ibb.co/MxxSdmwh/77-chem-2025-opt-a.png|150]] \\
+(b) [[IMAGE:https://i.ibb.co/YnyMDdM/77-chem-2025-opt-b.png|150]] \\
+(c) [[IMAGE:https://i.ibb.co/9HR1vVJ5/77-chem-2025-opt-c.png|150]] \\
+(d) [[IMAGE:https://i.ibb.co/nN9JLDjZ/77-chem-2025-opt-d.png|150]]`,
   },
   {
     questionNumber: 78,
     marks: 1,
-    content: `Which of the following reagents/reactions will convert 'A' to 'B' (Aldehyde to Alkane)?
+    content: `Which of the following reagents/reactions will convert 'A' to 'B' (Aldehyde to Alkane)? \\
+    [[IMAGE:https://i.ibb.co/Ldqj7K9b/78-chem-2025.png|400]]
 
 (a) PCC oxidation \\
 (b) Ozonolysis \\
@@ -404,17 +406,19 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 91,
     marks: 1,
-    content: `Identify the major product in the following reaction: $C_6H_5OH + C_2H_5OH$ (Note: Reaction context implies ether formation or similar derivative).
+    content: `Identify the major product in the following reaction: \\
+    [[IMAGE:https://i.ibb.co/tT7ZPJpR/91-chem-2025.png|400]]
 
-(a) $C_6H_5OC_2H_5$ (Phenetole) \\
-(b) $C_6H_5CH_2CH_3$ \\
-(c) $C_6H_5CH(OH)CH_3$ \\
-(d) $C_6H_5CH_2CH_2OH$`,
+(a) [[IMAGE:https://i.ibb.co/KcNjCxwH/91-chem-2025-opt-a.png]] \\
+(b) [[IMAGE:https://i.ibb.co/5XYjzQKW/91-chem-2025-opt-b.png]] \\
+(c) [[IMAGE:https://i.ibb.co/QFdCMmPN/91-chem-2025-opt-c.png]] \\
+(d) [[IMAGE:https://i.ibb.co/0jVRfjhv/91-chem-2025-opt-d.png]]`,
   },
   {
     questionNumber: 92,
     marks: 1,
-    content: `The increasing order of nitration of the following compounds is: (A) Benzoic acid (B) Aniline (C) Anisole (D) Acetophenone
+    content: `The increasing order of nitration of the following compounds is: \\
+    [[IMAGE:https://i.ibb.co/1Jh98Jzx/92-chem-2025.png|400]]
 
 (a) $(A)<(B)<(D)<(C)$ \\
 (b) $(A)<(B)<(C)<(D)$ \\
@@ -444,22 +448,18 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 95,
     marks: 1,
-    content: `When o-hydroxybenzaldehyde undergoes intramolecular aldol condensation, the major product formed is:
-
-(a) Benzofuran derivative \\
-(b) Coumarin derivative \\
-(c) Cinnamic acid derivative \\
-(d) Salicylaldehyde dimer`,
+    content: `When o-hydroxybenzaldehyde undergoes intramolecular aldol condensation, the major product formed is: \\
+    [[IMAGE:https://i.ibb.co/Zprh13WF/95-chem-2025.png|300]]
+.
+[[IMAGE:https://i.ibb.co/VYNG3y64/95-chem-2025-options.png|500]]`,
   },
   {
     questionNumber: 96,
     marks: 1,
-    content: `The major product of the reaction between $CH_3CH=CH_2$ and $HBr$ in the presence of peroxide is:
+    content: `The major product of the reaction between $CH_3CH=CH_2$ and $HBr$ in the presence of peroxide is: \\
+    [[IMAGE:https://i.ibb.co/zTwWJvZg/96-chem-2025.png|400]]
 
-(a) 1-bromopropane \\
-(b) 2-bromopropane \\
-(c) 1,2-dibromopropane \\
-(d) Cyclopropane`,
+.[[IMAGE:https://i.ibb.co/G4mryH2V/96-chem-2025-options.png|500]]`,
   },
   {
     questionNumber: 97,
@@ -494,11 +494,8 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 100,
     marks: 1,
-    content: `Which of the following is the correct structure of L-Glucose?
-
-(a) Structure A (OH on left at C5) \\
-(b) Structure B (OH on right at C5) \\
-(c) Structure C (All OH right) \\
-(d) Structure D (All OH left)`,
+    content: `Which of the following is the correct structure of L-Glucose? \\
+[[IMAGE:https://i.ibb.co/7x8RX2VN/100-chem-2025-options.png|600]]
+`,
   },
 ];

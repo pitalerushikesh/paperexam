@@ -18,28 +18,50 @@ export const getDriveImageSrc = (url: string, width = 1000) => {
 export const injectDriveImages = (html: string) => {
   if (!html) return "";
 
-  return html.replace(/\[\[IMAGE:(.*?)\]\]/g, (_, url) => {
-    const trimmedUrl = url.trim();
+  // Regex Explanation:
+  // \[\[IMAGE:   -> Matches literal "[[IMAGE:"
+  // ([^|\]]+)    -> Group 1 (URL): Matches anything EXCEPT a pipe "|" or closing bracket "]"
+  // (?:\|(\d+))? -> Non-capturing group for the optional part:
+  //    \|        -> Matches literal "|"
+  //    (\d+)     -> Group 2 (Width): Matches digits only
+  // \]\]         -> Matches literal "]]"
 
-    // ✅ If NOT a Google Drive link → use directly
-    if (!trimmedUrl.includes("drive.google.com")) {
-      return `<img
-        src="${trimmedUrl}"
+  return html.replace(
+    /\[\[IMAGE:([^|\]]+)(?:\|(\d+))?\]\]/g,
+    (_, rawUrl, rawWidth) => {
+      const url = rawUrl.trim();
+      const width = rawWidth ? rawWidth.trim() : null; // Capture width if it exists
+
+      // ✅ If NOT a Google Drive link → use directly
+      if (!url.includes("drive.google.com")) {
+        // Use provided width, or default to 200
+        const finalWidth = width || "200";
+
+        return `<img
+        src="${url}"
         alt="PYQ Diagram"
-        width="200"
+        width="${finalWidth}"
         loading="lazy"
+        style="max-width: 100%; height: auto; display: block; margin: 10px 0;"
       />`;
-    }
+      }
 
-    // ✅ Google Drive link → convert
-    const src = getDriveImageSrc(trimmedUrl, 1200);
-    if (!src) return "";
+      // ✅ Google Drive link → convert
+      // We still fetch a high-res version (1200px) so it looks crisp on Retina screens,
+      // but we display it at the width you requested.
+      const src = getDriveImageSrc(url, 1200);
+      if (!src) return "";
 
-    return `<img
+      // Use provided width, or default to 500
+      const finalWidth = width || "500";
+
+      return `<img
       src="${src}"
       alt="PYQ Diagram"
-      width="500"
+      width="${finalWidth}"
       loading="lazy"
+      style="max-width: 100%; height: auto; display: block; margin: 10px 0;"
     />`;
-  });
+    },
+  );
 };
