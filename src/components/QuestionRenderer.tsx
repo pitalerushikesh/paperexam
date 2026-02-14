@@ -22,7 +22,7 @@ export const QuestionRenderer: React.FC<QuestionRendererProps> = ({
     <Box
       sx={{
         color: "text.primary",
-        fontSize: { xs: "0.875rem", sm: "1rem" }, // text-sm sm:text-base
+        fontSize: { xs: "0.875rem", sm: "1.2rem" }, // text-sm sm:text-base
         lineHeight: { xs: 1.625, sm: 2 }, // leading-relaxed sm:leading-loose
         fontFamily: "Merriweather, serif",
 
