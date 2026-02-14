@@ -4,54 +4,45 @@ export const mathsQuestions: Question[] = [
   {
     questionNumber: 101,
     marks: 2,
-    content: String.raw`
-In a triangle $ABC$, $BC = 7$, $AC = 8$, $AB = \alpha \in \mathbb{N}$ and $\cos A = \frac{2}{3}$.
-If $49 \cos(3C) + 42 = \frac{m}{n}$ where $\gcd(m, n) = 1$, then $m + n$ is equal to:
+    content: `If $\\tan^{-1} 2x + \\tan^{-1} 3x = \\frac{\\pi}{4}$, then value of $x$ is:
 
-(a) 38  
-(b) 39  
-(c) 37  
-(d) 36
-`,
+(A) $\\frac{5}{6}$ \\
+(B) $-\\frac{1}{6}$ \\
+(C) $1$ \\
+(D) $\\frac{1}{6}$`,
   },
 
   {
     questionNumber: 102,
     marks: 2,
-    content: String.raw`
-Let the equation $x(x + 2)(12 - k) = 2$ have equal roots. Then the value of $k$ is:
+    content: `If the points $A(5, k)$, $B(-3, 1)$ and $C(-7, -2)$ are collinear, then $k =$
 
-(a) 12  
-(b) 14  
-(c) 10  
-(d) 16
-`,
+(A) $\\frac{1}{7}$ \\
+(B) $7$ \\
+(C) $-7$ \\
+(D) $\\frac{-1}{7}$`,
   },
 
   {
     questionNumber: 103,
     marks: 2,
-    content: String.raw`
-If the mean and the standard deviation of the observations 2, 3, 3, 4, 5, 7, $a$, $b$ are 4 and $\sqrt{2}$ respectively, then the mean deviation about the mode is:
+    content: `The equation of circle with centre at $(2, -3)$ and the circumference $10\\pi$ units is:
 
-(a) 1  
-(b) 2  
-(c) 3/4  
-(d) 1/2
-`,
+(A) $x^{2} + y^{2} - 4x + 6y - 12 = 0$ \\
+(B) $x^{2} + y^{2} - 4x - 6y - 12 = 0$ \\
+(C) $x^{2} + y^{2} + 4x + 6y + 12 = 0$ \\
+(D) $x^{2} + y^{2} - 4x + 6y + 12 = 0$`,
   },
 
   {
     questionNumber: 104,
     marks: 2,
-    content: String.raw`
-The area of the region bounded by the curve $y = |x - 1|$ and $y = 1$ is:
+    content: `For given data $N = 60$, $\\sum x^{2} = 18000$ and $\\sum x = 960$, then variance of data is:
 
-(a) 1  
-(b) 2  
-(c) 1/2  
-(d) 4
-`,
+(A) $44$ \\
+(B) $54$ \\
+(C) $34$ \\
+(D) $22$`,
   },
 
   {
@@ -109,14 +100,10 @@ The domain of the function $f(x)=\frac{1}{\sqrt{9-x^{2}}}$ is:
   {
     questionNumber: 109,
     marks: 2,
-    content: String.raw`
-The amplitude of $\sin\frac{\pi}{5}+i(1-\cos\frac{\pi}{5})$ is:
+    content: String.raw`If $2\cos\theta = x + \frac{1}{x}$, then $2\cos 3\theta =$
 
-(a) $\frac{\pi}{5}$  
-(b) $\frac{\pi}{10}$  
-(c) $\frac{2\pi}{5}$  
-(d) $\frac{\pi}{15}$
-`,
+(A) $x^3 - \frac{1}{x^3} \qquad \qquad$ (B) $(x + \frac{1}{x})^3 \\ \\$
+(C) $x + \frac{1}{x} \qquad \qquad$ (D) $x^3 + \frac{1}{x^3}$`,
   },
 
   {
@@ -134,16 +121,12 @@ If $f(x)=\frac{\sqrt{4+x}-2}{x}, x\ne0$ is continuous at $x=0$, then $f(0)=$
   {
     questionNumber: 111,
     marks: 2,
-    content: String.raw`
-Let $A=\begin{bmatrix}\cos^{2}\theta & \sin\theta\cos\theta \\ \cos\theta\sin\theta & \sin^{2}\theta\end{bmatrix}$ and 
-$B=\begin{bmatrix}\cos^{2}\phi & \sin\phi\cos\phi \\ \cos\phi\sin\phi & \sin^{2}\phi\end{bmatrix}$.
-If $AB = 0$, then:
+    content: `If the elements of matrix $A$ are the reciprocals of elements of matrix $\\begin{bmatrix} 1 & \\omega & \\omega^{2} \\\\ \\omega & \\omega^{2} & 1 \\\\ \\omega^{2} & 1 & \\omega \\end{bmatrix}$, where $\\omega$ is complex cube root of unity, then:
 
-(a) $\theta = n\phi$  
-(b) $\theta + \phi = n\pi$  
-(c) $\theta - \phi = (2n+1)\frac{\pi}{2}$  
-(d) $\theta = \phi$
-`,
+(A) $A^{-1} = A^{2}$ \\
+(B) $A^{-1} = A$ \\
+(C) $A^{-1} = I$ \\
+(D) $A^{-1}$ does not exist`,
   },
 
   {
@@ -217,14 +200,12 @@ If $y = x^x$, then $\frac{dy}{dx}$ is:
   {
     questionNumber: 117,
     marks: 2,
-    content: String.raw`
-The probability of obtaining a sum of 8 in a single throw of two dice is:
+    content: `$$\\int_{0}^{\\frac{\\pi}{2}} \\frac{\\sqrt[3]{\\sec x}}{\\sqrt[3]{\\sec x} + \\sqrt[3]{\\cosec x}} dx =$$
 
-(a) $\frac{5}{36}$  
-(b) $\frac{1}{6}$  
-(c) $\frac{1}{9}$  
-(d) $\frac{7}{36}$
-`,
+(A) $\\frac{\\pi}{2}$ \\
+(B) $\\frac{\\pi}{4}$ \\
+(C) $0$ \\
+(D) $\\frac{-\\pi}{4}$`,
   },
 
   {
@@ -243,14 +224,12 @@ The value of $k$ for which the lines $3x - 4y + 7 = 0$ and $kx + 3y - 5 = 0$ are
   {
     questionNumber: 119,
     marks: 2,
-    content: String.raw`
-If $\omega$ is a complex cube root of unity, then $(1 + \omega - \omega^2)^3$ equals:
+    content: `The angle between the lines $\\frac{x-1}{4} = \\frac{y-3}{1} = \\frac{z}{8}$ and $\\frac{x-2}{2} = \\frac{y+1}{2} = \\frac{z-4}{1}$ is:
 
-(a) -8  
-(b) 8  
-(c) 1  
-(d) 0
-`,
+(A) $\\cos^{-1}\\left(\\frac{1}{3}\\right)$ \\
+(B) $\\sin^{-1}\\left(\\frac{1}{3}\\right)$ \\
+(C) $\\sin^{-1}\\left(\\frac{2}{3}\\right)$ \\
+(D) $\\cos^{-1}\\left(\\frac{2}{3}\\right)$`,
   },
 
   {
@@ -503,28 +482,24 @@ The value of $\int_{-\pi/2}^{\pi/2} \sin^7 x\, dx$ is:
   {
     questionNumber: 139,
     marks: 2,
-    content: String.raw`
-If line $y = mx + 1$ is tangent to the parabola $y^2 = 4x$, then $m$ is:
+    content: `If $f(x) = x$ for $x \\le 0$ \\
+$= 0$ for $x > 0$ then $f(x)$ at $x = 0$ is:
 
-(a) 1  
-(b) 2  
-(c) 3  
-(d) 4
-`,
+(A) Continuous but not differentiable \\
+(B) Not continuous but differentiable \\
+(C) Continuous and differentiable \\
+(D) Not continuous and not differentiable`,
   },
 
   {
     questionNumber: 140,
     marks: 2,
-    content: String.raw`
-The principal solution of $\cos x = \frac{1}{2}$ is:
+    content: String.raw`If $x^{p} y^{q} = (x + y)^{p+q}$, then $\frac{dy}{dx}$ is equal to:
 
-(a) $\pi/3, 5\pi/3$  
-(b) $\pi/6, 11\pi/6$  
-(c) $\pi/4, 7\pi/4$  
-(d) $\pi/3, 2\pi/3$
-`,
+(A) $\frac{y}{x} \qquad \qquad$ (B) $\frac{py}{qx} \\ $
+(C) $\frac{x}{y} \qquad \qquad$ (D) $\frac{qy}{px}$`,
   },
+
   {
     questionNumber: 141,
     marks: 2,
@@ -632,27 +607,22 @@ The equation of the circle concentric with $x^2 + y^2 - 6x + 4y - 12 = 0$ and pa
   {
     questionNumber: 149,
     marks: 2,
-    content: String.raw`
-If $y = \sin x$, then $y'' + y$ is equal to:
+    content: `The measure of the acute angle between the lines given by the equation $3x^{2} - 4\\sqrt{3}xy + 3y^{2} = 0$ is:
 
-(a) 0  
-(b) 1  
-(c) $2\sin x$  
-(d) $-2\sin x$
-`,
+(A) $30^{\\circ}$ \\
+(B) $45^{\\circ}$ \\
+(C) $60^{\\circ}$ \\
+(D) $70^{\\circ}$`,
   },
 
   {
     questionNumber: 150,
     marks: 2,
-    content: String.raw`
-The volume of a cube is increasing at a rate of $8\,cm^3/s$. 
-How fast is the surface area increasing when the length of an edge is 12 cm?
+    content: String.raw`A line makes angles $\alpha$, $\beta$, $\gamma$ with the co-ordinate axes, then $\cos 2\alpha + \cos 2\beta + \cos 2\gamma$ is equal to:
 
-(a) $8/3\,cm^2/s$  
-(b) $4/3\,cm^2/s$  
-(c) $2/3\,cm^2/s$  
-(d) $1\,cm^2/s$
-`,
+(A) $-2$ \
+(B) $-1$ \
+(C) $2$ \
+(D) $1$`,
   },
 ];
