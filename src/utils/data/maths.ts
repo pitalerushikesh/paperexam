@@ -44,59 +44,44 @@ export const mathsQuestions: Question[] = [
 (C) $34$ \\
 (D) $22$`,
   },
-
   {
     questionNumber: 105,
     marks: 2,
-    content: String.raw`
-The value of $\lim_{x \to 0} \frac{\log(1 + 3x)}{\sin 2x}$ is:
+    content: String.raw`The probability of forming a 12 persons committee from 4 engineers, 2 doctors and 10 professors containing at least 3 engineers and at least 1 doctor, is:
 
-(a) 3/2  
-(b) 2/3  
-(c) 1  
-(d) 0
-`,
+(a) $\frac{129}{182}$
+(b) $\frac{103}{182}$
+(c) $\frac{17}{26}$
+(d) $\frac{19}{26}$`,
   },
-
   {
     questionNumber: 106,
     marks: 2,
-    content: String.raw`
-If $\vec{a} = \hat{i} + 2\hat{j} + 3\hat{k}$ and $\vec{b} = 2\hat{i} - \hat{j} + \hat{k}$, then the projection of $\vec{a}$ on $\vec{b}$ is:
+    content: String.raw`In how many ways can a bowler take four wickets in a single 6-ball over?
 
-(a) $\frac{3}{\sqrt{6}}$  
-(b) $\frac{1}{\sqrt{6}}$  
-(c) $\frac{5}{\sqrt{6}}$  
-(d) $\frac{2}{\sqrt{6}}$
-`,
+(a) 6
+(b) 15
+(c) 20
+(d) 30`,
   },
-
   {
     questionNumber: 107,
     marks: 2,
-    content: String.raw`
-The general solution of $\tan 3x = \cot x$ is:
+    content: String.raw`Evaluate $\displaystyle \lim_{x \to 0} \frac{x}{\sqrt{1+x} - \sqrt{1-x}}$
 
-(a) $(2n+1)\frac{\pi}{8}$  
-(b) $n\pi + \frac{\pi}{4}$  
-(c) $(2n+1)\frac{\pi}{4}$  
-(d) $n\pi + \frac{\pi}{8}$
+(a) 1 $\quad (b) 2 \quad$ (c) $-1$ $\quad$ (d) $-2$
 `,
   },
-
   {
     questionNumber: 108,
     marks: 2,
-    content: String.raw`
-The domain of the function $f(x)=\frac{1}{\sqrt{9-x^{2}}}$ is:
+    content: String.raw`The domain of the function $f(x)=\frac{1}{\sqrt{9-x^2}}$ is:
 
-(a) $[-3, 3]$  
-(b) $(-3, 3)$  
-(c) $[-9, 9]$  
-(d) $(-9, 9)$
-`,
+(a) $-3\le x\le3$ \
+(b) $-3<x<3$ \
+(c) $-9\le x\le9$ \
+(d) $-9<x<9$`,
   },
-
   {
     questionNumber: 109,
     marks: 2,
@@ -105,18 +90,15 @@ The domain of the function $f(x)=\frac{1}{\sqrt{9-x^{2}}}$ is:
 (A) $x^3 - \frac{1}{x^3} \qquad \qquad$ (B) $(x + \frac{1}{x})^3 \\ \\$
 (C) $x + \frac{1}{x} \qquad \qquad$ (D) $x^3 + \frac{1}{x^3}$`,
   },
-
   {
     questionNumber: 110,
     marks: 2,
-    content: String.raw`
-If $f(x)=\frac{\sqrt{4+x}-2}{x}, x\ne0$ is continuous at $x=0$, then $f(0)=$
+    content: String.raw`If $f(x)=\frac{\sqrt{4+x}-2}{x}, x\ne0$ be continuous at $x=0$, then $f(0)=$
 
-(a) 1/2  
-(b) 1/4  
-(c) 2  
-(d) 4
-`,
+(a) $\frac{1}{2}$
+(b) $\frac{1}{4}$
+(c) 2
+(d) $\frac{3}{2}$`,
   },
   {
     questionNumber: 111,
@@ -128,75 +110,56 @@ If $f(x)=\frac{\sqrt{4+x}-2}{x}, x\ne0$ is continuous at $x=0$, then $f(0)=$
 (C) $A^{-1} = I$ \\
 (D) $A^{-1}$ does not exist`,
   },
-
   {
     questionNumber: 112,
     marks: 2,
-    content: String.raw`
-The shortest distance between the lines 
-$\frac{x-1}{2} = \frac{y-2}{3} = \frac{z-3}{4}$ and 
-$\frac{x-2}{3} = \frac{y-4}{4} = \frac{z-5}{5}$ is:
+    content: String.raw`If A is a square matrix of order 3, then $|Adj. A|=$
 
-(a) $\frac{1}{\sqrt{6}}$  
-(b) $\frac{1}{6}$  
-(c) $\frac{1}{\sqrt{3}}$  
-(d) 0
-`,
+(a) $|A|^{-1}$
+(b) $|A|$
+(c) $|A|^3$
+(d) $|A|^2$`,
   },
-
   {
     questionNumber: 113,
     marks: 2,
-    content: String.raw`
-If $A = \begin{bmatrix}1 & 2 \\ 3 & 4\end{bmatrix}$, then $A^{-1}$ is:
+    content: String.raw`For $A=\begin{bmatrix}3 & 1\\ -1 & 2\end{bmatrix}$ then $14A^{-1}$ is given by:
 
-(a) $\begin{bmatrix}-2 & 1 \\ 1.5 & -0.5\end{bmatrix}$  
-(b) $\frac{-1}{2}\begin{bmatrix}4 & -2 \\ -3 & 1\end{bmatrix}$  
-(c) $\begin{bmatrix}4 & -2 \\ -3 & 1\end{bmatrix}$  
-(d) Does not exist
-`,
+(a) $14\begin{bmatrix}2 & -1\\ 1 & 3\end{bmatrix}$
+(b) $\begin{bmatrix}4 & -2\\ 2 & 6\end{bmatrix}$
+(c) $2\begin{bmatrix}2 & -1\\ 1 & -3\end{bmatrix}$
+(d) $2\begin{bmatrix}-3 & -1\\ 1 & -2\end{bmatrix}$`,
   },
-
   {
     questionNumber: 114,
     marks: 2,
-    content: String.raw`
-A circle $C$ of radius 2 lies in the second quadrant and touches both the coordinate axes. 
-The equation of the circle is:
+    content: String.raw`$\int\frac{\sin^2x-\cos^2x}{\sin^2x \cos^2x}dx=$
 
-(a) $(x-2)^2 + (y-2)^2 = 4$  
-(b) $(x+2)^2 + (y-2)^2 = 4$  
-(c) $(x+2)^2 + (y+2)^2 = 4$  
-(d) $x^2 + y^2 + 4x - 4y + 4 = 0$
-`,
+(a) $\tan x+\cot x+c$
+(b) $\tan x+\text{cosec } x+c$
+(c) $\tan x+\sec x+c$
+(d) $\text{cosec } x+\sec x+c$`,
   },
-
   {
     questionNumber: 115,
     marks: 2,
-    content: String.raw`
-The value of $\int e^x (\sin x + \cos x)\, dx$ is:
+    content: String.raw`$\int\frac{e^x(1+x)}{\cos^2(xe^x)}dx$ equals:
 
-(a) $e^x \sin x + C$  
-(b) $e^x \cos x + C$  
-(c) $e^x (\sin x - \cos x) + C$  
-(d) $e^x \tan x + C$
-`,
+(a) $-\cot(xe^x)+C$
+(b) $\tan(xe^x)+C$
+(c) $\tan(e^x)+C$
+(d) $\cot(e^x)+C$`,
   },
-
   {
     questionNumber: 116,
     marks: 2,
-    content: String.raw`
-If $y = x^x$, then $\frac{dy}{dx}$ is:
+    content: String.raw`$\int_{1/4}^{1/2}\frac{dx}{\sqrt{x-x^2}}$ is equal to:
 
-(a) $x^x (1 + \log x)$  
-(b) $x^x \log x$  
-(c) $x \cdot x^{x-1}$  
-(d) $1 + \log x$
-`,
+(a) $\frac{\pi}{6}$
+(b) $\frac{\pi}{3}$
+(c) $\frac{\pi}{4}$
+(d) 0`,
   },
-
   {
     questionNumber: 117,
     marks: 2,
@@ -207,20 +170,16 @@ If $y = x^x$, then $\frac{dy}{dx}$ is:
 (C) $0$ \\
 (D) $\\frac{-\\pi}{4}$`,
   },
-
   {
     questionNumber: 118,
     marks: 2,
-    content: String.raw`
-The value of $k$ for which the lines $3x - 4y + 7 = 0$ and $kx + 3y - 5 = 0$ are perpendicular is:
+    content: String.raw`If two straight lines whose direction cosines are given by the relations $l+m-n=0$, $3l^2+m^2+cnl=0$ are parallel, then the positive value of c is:
 
-(a) 3  
-(b) 4  
-(c) -3  
-(d) -4
-`,
+(a) 6
+(b) 4
+(c) 3
+(d) 2`,
   },
-
   {
     questionNumber: 119,
     marks: 2,
@@ -231,254 +190,196 @@ The value of $k$ for which the lines $3x - 4y + 7 = 0$ and $kx + 3y - 5 = 0$ are
 (C) $\\sin^{-1}\\left(\\frac{2}{3}\\right)$ \\
 (D) $\\cos^{-1}\\left(\\frac{2}{3}\\right)$`,
   },
-
   {
     questionNumber: 120,
     marks: 2,
-    content: String.raw`
-The area of the triangle formed by the points $(0,0)$, $(3,0)$ and $(0,4)$ is:
+    content: String.raw`If the plane $x-3y+5z=d$ passes through the point (1, 2, 4), then the length of intercepts cut by it on the axes of X, Y, Z are respectively:
 
-(a) 12  
-(b) 6  
-(c) 7  
-(d) 5
-`,
+(a) 15, -5, 3
+(b) 1, -5, 3
+(c) -15, 5, -3
+(d) 1, -6, 20`,
   },
   {
     questionNumber: 121,
     marks: 2,
-    content: String.raw`
-The derivative of $\tan^{-1}\left(\frac{\cos x + \sin x}{\cos x - \sin x}\right)$ with respect to $x$ is:
+    content: String.raw`The maximum value of $P=x+3y$ such that $2x+y\le20$, $x+2y\le20$, $x\ge0$, $y\ge0$ is:
 
-(a) 0  
-(b) 1  
-(c) -1  
-(d) 1/2
-`,
+(a) 10
+(b) 60
+(c) 30
+(d) None`,
   },
-
   {
     questionNumber: 122,
     marks: 2,
-    content: String.raw`
-The maximum value of $f(x) = \sin x + \cos x$ is:
+    content: String.raw`Corner points of feasible region of inequalities gives:
 
-(a) 1  
-(b) 2  
-(c) $\sqrt{2}$  
-(d) $\frac{1}{\sqrt{2}}$
-`,
+(a) optimal solution of L.P.P.
+(b) objective function
+(c) constraints
+(d) linear assumption`,
   },
-
   {
     questionNumber: 123,
     marks: 2,
-    content: String.raw`
-The solution set of the inequality $x^2 - 5x + 6 < 0$ is:
+    content: String.raw`If $P(A)=\frac{1}{2}$, $P(B)=0$, then $P(A/B)$ is:
 
-(a) $(2,3)$  
-(b) $[2,3]$  
-(c) $(-\infty,2) \cup (3,\infty)$  
-(d) $(2,\infty)$
-`,
+(a) 0
+(b) $\frac{1}{2}$
+(c) not defined
+(d) 1`,
   },
-
   {
     questionNumber: 124,
     marks: 2,
-    content: String.raw`
-The value of $\int_0^1 \frac{1}{1+x^2} dx$ is:
+    content: String.raw`Under what condition do $\langle \frac{1}{\sqrt{2}}, \frac{1}{2}, k \rangle$ represent direction cosines of a line?
 
-(a) $\frac{\pi}{4}$  
-(b) $\frac{\pi}{2}$  
-(c) $\pi$  
-(d) 1
-`,
+(a) $k=\frac{1}{2}$
+(b) $k=-\frac{1}{2}$
+(c) $k=\pm\frac{1}{2}$
+(d) k can take any value`,
   },
-
   {
     questionNumber: 125,
     marks: 2,
-    content: String.raw`
-If vector $\vec{a}$ is perpendicular to $\vec{b}$, then $\vec{a} \cdot \vec{b} =$  
+    content: String.raw`The lines $x=ay+b$, $z=cy+d$ and $x=a'y+b'$, $z=c'y+d'$ are perpendicular if:
 
-(a) 1  
-(b) 0  
-(c) -1  
-(d) $|\vec{a}|\,|\vec{b}|$
-`,
+(a) $aa'+bb'+cc'+1=0$
+(b) $aa'+bb'+1=0$
+(c) $bb'+cc'+1=0$
+(d) $aa'+cc'+1=0$`,
   },
-
   {
     questionNumber: 126,
     marks: 2,
-    content: String.raw`
-The general solution of the differential equation $\frac{dy}{dx} = \frac{y}{x}$ is:
+    content: String.raw`Let X be a binomially distributed random variable with mean 4 and variance $\frac{4}{3}$, then $P(X\le2)$ is equal to:
 
-(a) $y = cx$  
-(b) $x = cy$  
-(c) $xy = c$  
-(d) $y = cx^2$
-`,
+(a) $\frac{73}{27}$
+(b) $\frac{146}{27}$
+(c) $\frac{146}{81}$
+(d) $\frac{126}{81}$`,
   },
-
   {
     questionNumber: 127,
     marks: 2,
-    content: String.raw`
-The contrapositive of the statement "If it rains, then I will stay at home" is:
+    content: String.raw`The mean and variance of a random variable X having binomial distribution are 4 and 2 respectively, then $P(X=1)$ is:
 
-(a) If I do not stay at home, then it did not rain  
-(b) If I stay at home, then it rains  
-(c) If it does not rain, I will not stay at home  
-(d) It rains and I do not stay at home
-`,
+(a) $\frac{1}{4}$
+(b) $\frac{1}{32}$
+(c) $\frac{1}{16}$
+(d) $\frac{1}{8}$`,
   },
-
   {
     questionNumber: 128,
     marks: 2,
-    content: String.raw`
-The value of $\sin^2 25^\circ + \sin^2 65^\circ$ is:
+    content: String.raw`Four fair dice are thrown independently 27 times. Then the expected number of times, at least two dice show up a three or a five, is:
 
-(a) 0  
-(b) 1  
-(c) 2  
-(d) 1/2
-`,
+(a) 1
+(b) 3
+(c) 11
+(d) None`,
   },
-
   {
     questionNumber: 129,
     marks: 2,
-    content: String.raw`
-The locus of a point which is equidistant from the points $(1,2)$ and $(3,4)$ is:
+    content: String.raw`The area bounded by the curve $y=\frac{3}{2}\sqrt{x}$, the line $x=1$ and x-axis is:
 
-(a) $x + y = 5$  
-(b) $x - y = 5$  
-(c) $x + y = 0$  
-(d) $2x + 2y = 7$
-`,
+(a) 2
+(b) 1
+(c) 6
+(d) 7 sq. units`,
   },
-
   {
     questionNumber: 130,
     marks: 2,
-    content: String.raw`
-The order and degree of the differential equation 
-$\frac{d^2y}{dx^2} = \sqrt{1 + \left(\frac{dy}{dx}\right)^2}$ are:
+    content: String.raw`The area bounded by $y-1=|x|$, $y=0$ and $|x|=\frac{1}{2}$ will be:
 
-(a) 2, 1  
-(b) 2, 2  
-(c) 1, 2  
-(d) 2, undefined
-`,
+(a) $\frac{3}{4}$
+(b) $\frac{3}{2}$
+(c) $\frac{5}{4}$
+(d) None`,
   },
   {
     questionNumber: 131,
     marks: 2,
-    content: String.raw`
-If $P(A) = 0.3$, $P(B) = 0.4$, and $A$ and $B$ are mutually exclusive, then $P(A \cup B)$ is:
+    content: String.raw`$\tan^{-1}x+\tan^{-1}y=c$ is the general solution of the differential equation:
 
-(a) 0.12  
-(b) 0.7  
-(c) 0.1  
-(d) 0.5
-`,
+(a) $\frac{dy}{dx}=\frac{1+y^2}{1+x^2}$
+(b) $\frac{dy}{dx}=\frac{1+x^2}{1+y^2}$
+(c) $(1+x^2)dy+(1+y^2)dx=0$
+(d) $(1+x^2)dx+(1+y^2)dy=0$`,
   },
-
   {
     questionNumber: 132,
     marks: 2,
-    content: String.raw`
-The slope of the normal to the curve $y = 2x^2 + 3\sin x$ at $x = 0$ is:
+    content: String.raw`If $y(x)$ is the solution of the differential equation $(x+2)\frac{dy}{dx}=x^2+4x-9, x\ne-2$ and $y(0)=0$ then $y(-4)$ is equal to:
 
-(a) 3  
-(b) -3  
-(c) 1/3  
-(d) -1/3
-`,
+(a) 0
+(b) 2
+(c) 1
+(d) -1`,
   },
-
   {
     questionNumber: 133,
     marks: 2,
-    content: String.raw`
-The value of $\cos(\sin^{-1} x + \cos^{-1} x)$ for $|x| \le 1$ is:
+    content: String.raw`If $\vec{a}$, $\vec{b}$, $\vec{c}$ are three non-coplanar vectors, then $[\vec{a}+\vec{b}+\vec{c} \quad \vec{a}-\vec{c} \quad \vec{a}-\vec{b}]$ is equal to:
 
-(a) 1  
-(b) 0  
-(c) -1  
-(d) x
-`,
+(a) 0
+(b) $2[\vec{a}\vec{b}\vec{c}]$
+(c) $-3[\vec{a}\vec{b}\vec{c}]$
+(d) $-2[\vec{a}\vec{b}\vec{c}]$`,
   },
-
   {
     questionNumber: 134,
     marks: 2,
-    content: String.raw`
-The equation of the plane passing through $(1,1,1)$ and parallel to the plane $2x + 3y + 4z = 5$ is:
+    content: String.raw`The vectors $\vec{a}=\hat{i}+\hat{j}+m\hat{k}$, $\vec{b}=\hat{i}+\hat{j}+(m+1)\hat{k}$ and $\vec{c}=\hat{i}-\hat{j}+m\hat{k}$ are coplanar if m is equal to:
 
-(a) $2x + 3y + 4z = 9$  
-(b) $2x + 3y + 4z = 0$  
-(c) $x + y + z = 3$  
-(d) $2x + 3y + 4z = 5$
-`,
+(a) 1
+(b) 4
+(c) 3
+(d) None`,
   },
-
   {
     questionNumber: 135,
     marks: 2,
-    content: String.raw`
-If $\begin{vmatrix} x & 2 \\ 18 & x \end{vmatrix} = 
-\begin{vmatrix} 6 & 2 \\ 18 & 6 \end{vmatrix}$, then $x$ is equal to:
+    content: String.raw`If A,B and C are the vertices of a triangle whose position vectors are $\vec{a},\vec{b}$ and $\vec{c}$ respectively and G is the centroid of the $\Delta ABC$, then $\vec{GA}+\vec{GB}+\vec{GC}$ is:
 
-(a) 6  
-(b) $\pm 6$  
-(c) -6  
-(d) 0
-`,
+(a) $\vec{0}$
+(b) $\vec{a}+\vec{b}+\vec{c}$
+(c) $\frac{\vec{a}+\vec{b}+\vec{c}}{3}$
+(d) $\frac{\vec{a}-\vec{b}-\vec{c}}{3}$`,
   },
-
   {
     questionNumber: 136,
     marks: 2,
-    content: String.raw`
-The distance of the point $P(2,3,4)$ from the x-axis is:
+    content: String.raw`If $x=b \cos^{-1}\sqrt{\frac{y}{b}}+\sqrt{by-y^2}$, then $\frac{dy}{dx}=$
 
-(a) 5  
-(b) $\sqrt{13}$  
-(c) 2  
-(d) $\sqrt{29}$
-`,
+(a) $-\sqrt{\frac{b}{y}-1}$
+(b) $\sqrt{1-\frac{b}{y}}$
+(c) $\sqrt{by-y^2}$
+(d) 0`,
   },
-
   {
     questionNumber: 137,
     marks: 2,
-    content: String.raw`
-The negation of the statement "All natural numbers are integers" is:
+    content: String.raw`If $y=e^{x^x}$, then $\frac{dy}{dx}=$
 
-(a) Some natural numbers are not integers  
-(b) No natural number is an integer  
-(c) All integers are natural numbers  
-(d) Some integers are not natural numbers
-`,
+(a) $y(1+\log_e x)$
+(b) $yx^x(1+\log_e x)$
+(c) $ye^x(1+\log_e x)$
+(d) None of these`,
   },
-
   {
     questionNumber: 138,
     marks: 2,
-    content: String.raw`
-The value of $\int_{-\pi/2}^{\pi/2} \sin^7 x\, dx$ is:
+    content: String.raw`If $f(1)=1, f'(1)=3$, then the derivative of $f(f(f(x)))+(f(x))^2$ at $x=1$ is:
 
-(a) 1  
-(b) 0  
-(c) 2  
-(d) -1
-`,
+(a) 33
+(b) 12
+(c) 15
+(d) 9`,
   },
-
   {
     questionNumber: 139,
     marks: 2,
@@ -499,111 +400,86 @@ $= 0$ for $x > 0$ then $f(x)$ at $x = 0$ is:
 (A) $\frac{y}{x} \qquad \qquad$ (B) $\frac{py}{qx} \\ $
 (C) $\frac{x}{y} \qquad \qquad$ (D) $\frac{qy}{px}$`,
   },
-
   {
     questionNumber: 141,
     marks: 2,
-    content: String.raw`
-If $y = e^{\tan x}$, then $\frac{dy}{dx}$ at $x = 0$ is:
+    content: String.raw`The approximate value of $\sqrt{0.0037}$ is:
 
-(a) 0  
-(b) 1  
-(c) e  
-(d) 2
-`,
+(a) $\frac{37}{600}$
+(b) $\frac{73}{1200}$
+(c) $\frac{71}{1200}$
+(d) None`,
   },
-
   {
     questionNumber: 142,
     marks: 2,
-    content: String.raw`
-The acute angle between the planes $2x - y + z = 6$ and $x + y + 2z = 3$ is:
+    content: String.raw`If $f(x)=x^x$, then $f(x)$ is decreasing in interval:
 
-(a) $\pi/3$  
-(b) $\pi/4$  
-(c) $\pi/6$  
-(d) $\pi/2$
-`,
+(a) $]0, e[$
+(b) $]0, \frac{1}{e}[$
+(c) $]0, 1[$
+(d) None of these`,
   },
-
   {
     questionNumber: 143,
     marks: 2,
-    content: String.raw`
-The value of $\log_{10} 10 + \log_{10} 100 + \log_{10} 1000$ is:
+    content: String.raw`If $x=a(\cos t+t\sin t)$ and $y=a(\sin t-t\cos t)$, then $\frac{d^2y}{dx^2}$ is:
 
-(a) 3  
-(b) 6  
-(c) 1110  
-(d) 10
-`,
+(a) $\sec^3 t$
+(b) $at\sec^3 t$
+(c) $\frac{\sec^3 t}{at}$
+(d) $\sec^2 t$`,
   },
-
   {
     questionNumber: 144,
     marks: 2,
-    content: String.raw`
-If $f: \mathbb{R} \to \mathbb{R}$ is defined by $f(x) = 3x - 4$, then $f^{-1}(x)$ is:
+    content: String.raw`The maximum value of $(\log x)/x$ is:
 
-(a) $\frac{x+4}{3}$  
-(b) $\frac{x-4}{3}$  
-(c) $3x+4$  
-(d) $\frac{1}{3x-4}$
-`,
+(a) e
+(b) 2e
+(c) $1/e$
+(d) $2/e$`,
   },
-
   {
     questionNumber: 145,
     marks: 2,
-    content: String.raw`
-The feasible region for an LPP is shown in the figure. The objective function $Z = 4x + 3y$ will be maximum at:
+    content: String.raw`$\sim((\sim p)\wedge q)$ is equal to:
 
-(a) (0, 0)  
-(b) Corner point with maximum coordinates  
-(c) (0, 5)  
-(d) (5, 0)
-`,
+(a) $p\vee(\sim q)$
+(b) $p\vee q$
+(c) $p\wedge(\sim q)$
+(d) $\sim p\wedge\sim q$`,
   },
-
   {
     questionNumber: 146,
     marks: 2,
-    content: String.raw`
-If $\vec{a}$ and $\vec{b}$ are unit vectors such that $|\vec{a} + \vec{b}| = 1$, then $|\vec{a} - \vec{b}|$ is:
+    content: String.raw`Let p: price increases, q: Demand falls. The symbolic statement of 'If demand does not fall then price does not increase' is:
 
-(a) 1  
-(b) $\sqrt{3}$  
-(c) $\sqrt{2}$  
-(d) 2
-`,
+(a) $q\rightarrow p$
+(b) $\sim q\rightarrow p$
+(c) $\sim q\rightarrow\sim p$
+(d) $\sim q\leftrightarrow\sim p$`,
   },
-
   {
     questionNumber: 147,
     marks: 2,
-    content: String.raw`
-The value of $\frac{d}{dx}(e^{3\log x})$ is:
+    content: String.raw`The angle between two lines represented by $2x^2+5xy+3y^2+6x+7y+4=0$ is:
 
-(a) $3x^2$  
-(b) $x^3$  
-(c) $3e^{3\log x}$  
-(d) $3x$
-`,
+(a) $\tan^{-1}(\frac{2}{5})$
+(b) $\tan^{-1}(\pm\frac{1}{5})$
+(c) $\frac{\pi}{4}$
+(d) $\frac{3\pi}{4}$`,
   },
-
   {
     questionNumber: 148,
     marks: 2,
-    content: String.raw`
-The equation of the circle concentric with $x^2 + y^2 - 6x + 4y - 12 = 0$ and passing through $(-2,2)$ is:
+    content: String.raw`If one of the lines of $6x^2-xy+4cy^2=0$ is given by $3x+4y=0$ then c equals:
 
-(a) $x^2 + y^2 - 6x + 4y - 20 = 0$  
-(b) $x^2 + y^2 - 6x + 4y + 12 = 0$  
-(c) $x^2 + y^2 - 6x + 4y - 32 = 0$  
-(d) $x^2 + y^2 + 6x - 4y - 12 = 0$
-`,
+(a) -3
+(b) -1
+(c) 3
+(d) 1`,
   },
-
   {
     questionNumber: 149,
     marks: 2,
@@ -614,7 +490,6 @@ The equation of the circle concentric with $x^2 + y^2 - 6x + 4y - 12 = 0$ and pa
 (C) $60^{\\circ}$ \\
 (D) $70^{\\circ}$`,
   },
-
   {
     questionNumber: 150,
     marks: 2,
