@@ -253,7 +253,7 @@ export const mathsQuestions: Question[] = [
   {
     questionNumber: 126,
     marks: 2,
-    content: String.raw`Let X be a binomially distributed random variable with mean 4 and variance $\frac{4}{3}$, then $P(X\le2)$ is equal to:
+    content: String.raw`Let X be a binomially distributed random variable with mean 4 and variance $\frac{4}{3}$, Then 54 $P(X\le2)$ is equal to:
 
 (a) $\frac{73}{27}$
 (b) $\frac{146}{27}$
@@ -283,12 +283,9 @@ export const mathsQuestions: Question[] = [
   {
     questionNumber: 129,
     marks: 2,
-    content: String.raw`The area bounded by the curve $y=\frac{3}{2}\sqrt{x}$, the line $x=1$ and x-axis is:
+    content: String.raw`The area bounded by the curve $y=\frac{3}{2}\sqrt{x}$, the line $x=1$ and x-axis is _______  sq. units.
 
-(a) 2
-(b) 1
-(c) 6
-(d) 7 sq. units`,
+$(a) 2 \quad (b) 1 \quad (c) 6 \quad (d) None$`,
   },
   {
     questionNumber: 130,
