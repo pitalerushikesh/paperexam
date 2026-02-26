@@ -14,16 +14,21 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 2,
     marks: 1,
-    content: `If $\\alpha$, $\\beta$ and $\\gamma$ are coefficients of linear, area and volume expansion respectively, then:
+    optionFontScale: 1.5,
+    content: `The maximum wavelength of radiation emitted by a black body at $1227^\\circ C$ is $\\lambda_{max}$. The maximum wavelength emitted by the black body at $2227^\\circ C$ is:
 
-(a) $\\gamma = 3\\alpha$ \\
-(b) $\\alpha = 3\\gamma$ \\
-(c) $\\beta = 3\\alpha$ \\
-(d) $\\gamma = 3\\beta$`,
+(a) $\\frac{\\lambda_{max}}{3}$
+
+(b) $\\frac{3\\lambda_{max}}{5}$
+
+(c) $\\frac{9\\lambda_{max}}{25}$
+
+(d) $\\frac{\\lambda_{max}}{2}$`,
   },
   {
     questionNumber: 3,
     marks: 1,
+    optionFontScale: 1.5,
     content: `A liquid is filled upto a height of 20 cm in a cylindrical vessel. The speed of liquid coming out of a small hole at the bottom of the vessel is $(g=10~ms^{-2})$ :
 
 (a) $1.2~ms^{-1}$ \\
@@ -35,7 +40,7 @@ export const physicsQuestions: Question[] = [
     questionNumber: 4,
     marks: 1,
     content: `For a perfect gas, two pressures $P_1$ and $P_2$ are shown in the volume (V) vs Temperature (T) graph. The graph shows: \\
-    [[IMAGE:https://i.ibb.co/p6rCHT01/4-phys-2025.png]]
+    [[IMAGE:https://i.ibb.co/p6rCHT01/4-phys-2025.png|300]]
 
 (a) $P_1 > P_2$ \\
 (b) $P_1 < P_2$ \\
@@ -55,39 +60,50 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 6,
     marks: 1,
+    optionFontScale: 1.5,
     content: `According to law of equipartition of energy the molar specific heat of a diatomic gas at constant volume where the molecule has one additional vibrational mode is:
 
-(a) $\\frac{9}{2}R$ \\
-(b) $\\frac{5}{2}R$ \\
-(c) $\\frac{3}{2}R$ \\
+(a) $\\frac{9}{2}R$ 
+
+(b) $\\frac{5}{2}R$ 
+
+(c) $\\frac{3}{2}R$ 
+
 (d) $\\frac{7}{2}R$`,
   },
   {
     questionNumber: 7,
     marks: 1,
+    optionFontScale: 1.5,
     content: `As shown in the figure, a metallic rod of linear density $0.45~kg~m^{-1}$ is lying horizontally on a smooth incline plane which makes an angle of $45^\\circ$ with the horizontal. The minimum current flowing in the rod required to keep it stationary, when 0.15 T magnetic field is acting on it in the vertical upward direction, will be: $\{Use~g=10~m/s^2\}$ \\
-    [[IMAGE:https://i.ibb.co/bg6S5gCH/7-phys-2025.png]]
+    [[IMAGE:https://i.ibb.co/bg6S5gCH/7-phys-2025.png|300]] 
 
-(a) 30 A \\
-(b) 15 A \\
-(c) 10 A \\
+(a) 30 A 
+
+(b) 15 A 
+
+(c) 10 A 
+
 (d) 3 A`,
   },
   {
     questionNumber: 8,
     marks: 1,
-    content: `A sphere of radius R carries charge density $\\rho$ proportional to the square of the distance (r) from the centre such that $\\rho=Cr^2$ where C is a positive constant. At a distance $R/2$ from the centre, the magnitude of the electric field is:
+    content: `A parallel plate capacitor with air between the plates has capacitance of 12 $\\mu F$. If the distance between the plates is reduced to half and space between them is filled with a substance of dielectric constant 4, then new capacitance will be:
 
-(a) $\\frac{CR^3}{20~\\epsilon_0}$ \\
-(b) $\\frac{CR^3}{10~\\epsilon_0}$ \\
-(c) $\\frac{CR^3}{5~\\epsilon_0}$ \\
-(d) None of these`,
+(a) 48 $\\mu F$
+
+(b) 96 $\\mu F$
+
+(c) 12 $\\mu F$
+
+(d) 24 $\\mu F$`,
   },
   {
     questionNumber: 9,
     marks: 1,
     content: `Two point charges -q and +q are placed at a distance of L. The magnitude of electric field intensity at a distance $R(R>>L)$ varies as: \\
-    [[IMAGE:https://i.ibb.co/DgGFHhwv/9-phys-2025.png]]
+    [[IMAGE:https://i.ibb.co/DgGFHhwv/9-phys-2025.png|300]]
 
 (a) $\\frac{1}{R^3}$ \\
 (b) $\\frac{1}{R^4}$ \\
@@ -107,12 +123,15 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 11,
     marks: 1,
-    content: `A sample of gas expands from volume $v_1$ to $v_2$. The amount of work done by the gas is greatest when the expansion is:
+    content: `The thermodynamic process in which no work is done on or by the gas is:
 
-(a) isothermal \\
-(b) isobaric \\
-(c) adiabatic \\
-(d) equal in all cases`,
+(a) isothermal process  
+
+(b) isobaric process  
+
+(c) adiabatic process  
+
+(d) isochoric process`,
   },
   {
     questionNumber: 12,
@@ -221,7 +240,7 @@ export const physicsQuestions: Question[] = [
     marks: 1,
     content: `The four arms of a Wheatstone bridge have resistances as shown in the figure. A galvanometer of 15 $\\Omega$ resistance is connected across BD. Calculate the current through the galvanometer when a potential difference of 10 V is maintained across AC.
 
-[[IMAGE:https://i.ibb.co/tMTdct0B/22-phys-2025.png]]
+[[IMAGE:https://i.ibb.co/tMTdct0B/22-phys-2025.png|300]]
 
 (a) 2.44 $\\mu$A \\
 (b) 4.87 $\\mu$A \\
@@ -233,11 +252,14 @@ export const physicsQuestions: Question[] = [
     marks: 1,
     content: `The net impedance of circuit (as shown in figure) will be:
 
-[[IMAGE:https://i.ibb.co/B2cFt7yq/23-phys-2025.png]]
+[[IMAGE:https://i.ibb.co/B2cFt7yq/23-phys-2025.png|300]]
 
-(a) $10\\sqrt{2}\\,\\Omega$ \\
-(b) 15 $\\Omega$ \\
-(c) $5\\sqrt{5}\\,\\Omega$ \\
+(a) $10\\sqrt{2}\\,\\Omega$ 
+
+(b) 15 $\\Omega$ 
+
+(c) $5\\sqrt{5}\\,\\Omega$ 
+
 (d) 25 $\\Omega$`,
   },
   {
@@ -477,11 +499,15 @@ The logic circuit is:
   {
     questionNumber: 43,
     marks: 1,
+    optionFontScale: 1.5,
     content: `A simple pendulum performs SHM about $x = 0$ with an amplitude $a$ and time period $T$. What is the speed of the pendulum at $x = a/2$?
 
-(a) $\\frac{a\\pi\\sqrt{3}}{T}$ \\
-(b) $\\frac{a^2\\pi^2\\sqrt{3}}{T^2}$ \\
-(c) $\\frac{a}{T}$ \\
+(a) $\\frac{a\\pi\\sqrt{3}}{T}$ 
+
+(b) $\\frac{a^2\\pi^2\\sqrt{3}}{T^2}$ 
+
+(c) $\\frac{a}{T}$ 
+
 (d) $\\frac{a\\pi}{T}$`,
   },
   {
@@ -497,6 +523,7 @@ The logic circuit is:
   {
     questionNumber: 45,
     marks: 1,
+    optionFontScale: 1.5,
     content: `Find the torque about the origin when a force of $3\\hat{j}$ N acts on a particle whose position vector is $2\\hat{k}$ m.
 
 (a) $6\\hat{j}$ Nm  
@@ -507,12 +534,15 @@ The logic circuit is:
   {
     questionNumber: 46,
     marks: 1,
-    optionFontScale: 1.3,
+    optionFontScale: 1.5,
     content: `A planet of mass m moves around the sun of mass M in an elliptical orbit. The maximum and minimum distance of the planet from the sun are $r_1$ and $r_2$ respectively. The time period of planet is proportional to:
 
 (a) $r_1^{2/5}$  
+
 (b) $(\\frac{r_1 + r_2}{2})^{3/2}$  
+
 (c) $(\\frac{r_1 - r_2}{2})^{3/2}$  
+
 (d) $r^{3/2}$`,
   },
   {
