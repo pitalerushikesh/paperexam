@@ -14,16 +14,21 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 2,
     marks: 1,
-    content: `If $\\alpha$, $\\beta$ and $\\gamma$ are coefficients of linear, area and volume expansion respectively, then:
+    optionFontScale: 1.5,
+    content: `The maximum wavelength of radiation emitted by a black body at $1227^\\circ C$ is $\\lambda_{max}$. The maximum wavelength emitted by the black body at $2227^\\circ C$ is:
 
-(a) $\\gamma = 3\\alpha$ \\
-(b) $\\alpha = 3\\gamma$ \\
-(c) $\\beta = 3\\alpha$ \\
-(d) $\\gamma = 3\\beta$`,
+(a) $\\frac{\\lambda_{max}}{3}$
+
+(b) $\\frac{3\\lambda_{max}}{5}$
+
+(c) $\\frac{9\\lambda_{max}}{25}$
+
+(d) $\\frac{\\lambda_{max}}{2}$`,
   },
   {
     questionNumber: 3,
     marks: 1,
+    optionFontScale: 1.5,
     content: `A liquid is filled upto a height of 20 cm in a cylindrical vessel. The speed of liquid coming out of a small hole at the bottom of the vessel is $(g=10~ms^{-2})$ :
 
 (a) $1.2~ms^{-1}$ \\
@@ -35,7 +40,7 @@ export const physicsQuestions: Question[] = [
     questionNumber: 4,
     marks: 1,
     content: `For a perfect gas, two pressures $P_1$ and $P_2$ are shown in the volume (V) vs Temperature (T) graph. The graph shows: \\
-    [[IMAGE:https://i.ibb.co/p6rCHT01/4-phys-2025.png]]
+    [[IMAGE:https://i.ibb.co/p6rCHT01/4-phys-2025.png|300]]
 
 (a) $P_1 > P_2$ \\
 (b) $P_1 < P_2$ \\
@@ -55,39 +60,50 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 6,
     marks: 1,
+    optionFontScale: 1.5,
     content: `According to law of equipartition of energy the molar specific heat of a diatomic gas at constant volume where the molecule has one additional vibrational mode is:
 
-(a) $\\frac{9}{2}R$ \\
-(b) $\\frac{5}{2}R$ \\
-(c) $\\frac{3}{2}R$ \\
+(a) $\\frac{9}{2}R$ 
+
+(b) $\\frac{5}{2}R$ 
+
+(c) $\\frac{3}{2}R$ 
+
 (d) $\\frac{7}{2}R$`,
   },
   {
     questionNumber: 7,
     marks: 1,
+    optionFontScale: 1.5,
     content: `As shown in the figure, a metallic rod of linear density $0.45~kg~m^{-1}$ is lying horizontally on a smooth incline plane which makes an angle of $45^\\circ$ with the horizontal. The minimum current flowing in the rod required to keep it stationary, when 0.15 T magnetic field is acting on it in the vertical upward direction, will be: $\{Use~g=10~m/s^2\}$ \\
-    [[IMAGE:https://i.ibb.co/bg6S5gCH/7-phys-2025.png]]
+    [[IMAGE:https://i.ibb.co/bg6S5gCH/7-phys-2025.png|300]] 
 
-(a) 30 A \\
-(b) 15 A \\
-(c) 10 A \\
+(a) 30 A 
+
+(b) 15 A 
+
+(c) 10 A 
+
 (d) 3 A`,
   },
   {
     questionNumber: 8,
     marks: 1,
-    content: `A sphere of radius R carries charge density $\\rho$ proportional to the square of the distance (r) from the centre such that $\\rho=Cr^2$ where C is a positive constant. At a distance $R/2$ from the centre, the magnitude of the electric field is:
+    content: `A parallel plate capacitor with air between the plates has capacitance of 12 $\\mu F$. If the distance between the plates is reduced to half and space between them is filled with a substance of dielectric constant 4, then new capacitance will be:
 
-(a) $\\frac{CR^3}{20~\\epsilon_0}$ \\
-(b) $\\frac{CR^3}{10~\\epsilon_0}$ \\
-(c) $\\frac{CR^3}{5~\\epsilon_0}$ \\
-(d) None of these`,
+(a) 48 $\\mu F$
+
+(b) 96 $\\mu F$
+
+(c) 12 $\\mu F$
+
+(d) 24 $\\mu F$`,
   },
   {
     questionNumber: 9,
     marks: 1,
     content: `Two point charges -q and +q are placed at a distance of L. The magnitude of electric field intensity at a distance $R(R>>L)$ varies as: \\
-    [[IMAGE:https://i.ibb.co/DgGFHhwv/9-phys-2025.png]]
+    [[IMAGE:https://i.ibb.co/DgGFHhwv/9-phys-2025.png|300]]
 
 (a) $\\frac{1}{R^3}$ \\
 (b) $\\frac{1}{R^4}$ \\
@@ -107,12 +123,15 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 11,
     marks: 1,
-    content: `A sample of gas expands from volume $v_1$ to $v_2$. The amount of work done by the gas is greatest when the expansion is:
+    content: `The thermodynamic process in which no work is done on or by the gas is:
 
-(a) isothermal \\
-(b) isobaric \\
-(c) adiabatic \\
-(d) equal in all cases`,
+(a) isothermal process  
+
+(b) isobaric process  
+
+(c) adiabatic process  
+
+(d) isochoric process`,
   },
   {
     questionNumber: 12,
@@ -209,7 +228,7 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 21,
     marks: 1,
-    content: `A step up transformer on a 230 V line supplies 2 A. Ratio of primary to secondary winding is 1:25. Current in primary is:
+    content: `A step up transformer operates on a 230 V line and supplies a current of 2 ampere. The ratio of primary and secondary winding is 1 : 25. The current in primary is:
 
 (a) 25 A \\
 (b) 50 A \\
@@ -219,70 +238,91 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 22,
     marks: 1,
-    content: `A Wheatstone bridge has arms as shown. Calculate current through the 15 $\\Omega$ galvanometer (BD) with 10 V across AC. \\
-    [[IMAGE:https://i.ibb.co/tMTdct0B/22-phys-2025.png]]
+    content: `The four arms of a Wheatstone bridge have resistances as shown in the figure. A galvanometer of 15 $\\Omega$ resistance is connected across BD. Calculate the current through the galvanometer when a potential difference of 10 V is maintained across AC.
 
-(a) 2.44 $\\mu A$ \\
-(b) 4.87 $\\mu A$ \\
+[[IMAGE:https://i.ibb.co/tMTdct0B/22-phys-2025.png|300]]
+
+(a) 2.44 $\\mu$A \\
+(b) 4.87 $\\mu$A \\
 (c) 2.44 mA \\
 (d) 4.87 mA`,
   },
   {
     questionNumber: 23,
     marks: 1,
-    content: `Net impedance of the circuit shown (L = $50/\\pi$ mH, C = $10^3/\\pi$ $\\mu F$, R = 10 $\\Omega$, 220 V, 50 Hz) will be: \\
-    [[IMAGE:https://i.ibb.co/B2cFt7yq/23-phys-2025.png]]
+    content: `The net impedance of circuit (as shown in figure) will be:
 
-(a) $10\\sqrt{2}~\\Omega$ \\
-(b) 15 $\\Omega$ \\
-(c) $5\\sqrt{5}~\\Omega$ \\
+[[IMAGE:https://i.ibb.co/B2cFt7yq/23-phys-2025.png|300]]
+
+(a) $10\\sqrt{2}\\,\\Omega$ 
+
+(b) 15 $\\Omega$ 
+
+(c) $5\\sqrt{5}\\,\\Omega$ 
+
 (d) 25 $\\Omega$`,
   },
   {
     questionNumber: 24,
     marks: 1,
-    content: `Two circular loops of radii $R_1$ and $R_2$ are in the same plane ($R_1 >> R_2$). Mutual inductance M is proportional to:
+    optionFontScale: 1.5,
+    content: `Two conducting circular loops of radii $R_1$ and $R_2$ are placed in the same plane with their centres coinciding. If $R_1 >> R_2$, the mutual inductance M between them will be directly proportional to:
 
-(a) $R_2^2/R_1$ \\
-(b) $R_1/R_2$ \\
-(c) $R_2/R_1$ \\
-(d) $R_1^2/R_2$`,
+(a) $\\frac{R_2^2}{R_1}$ \
+
+(b) $\\frac{R_1}{R_2}$ \
+
+(c) $\\frac{R_2}{R_1}$ \
+
+(d) $\\frac{R_1^2}{R_2}$`,
   },
   {
     questionNumber: 25,
     marks: 1,
-    content: `In a series LCR circuit, current leads voltage by $45^\\circ$. The value of C is:
+    optionFontScale: 1.5,
+    content: `In a circuit, L, C and R are connected in series with an alternating voltage source of frequency f. The current leads the voltage by $45^\\circ$. The value of C is:
 
-(a) $\\frac{1}{\\pi f(2\\pi fL - R)}$ \\
-(b) $\\frac{1}{2\\pi f(2\\pi fL - R)}$ \\
-(c) $\\frac{1}{\\pi f(2\\pi fL + R)}$ \\
+(a) $\\frac{1}{\\pi f(2\\pi fL - R)}$ 
+
+(b) $\\frac{1}{2\\pi f(2\\pi fL - R)}$ 
+
+(c) $\\frac{1}{\\pi f(2\\pi fL + R)}$ 
+
 (d) $\\frac{1}{2\\pi f(2\\pi fL + R)}$`,
   },
   {
     questionNumber: 26,
     marks: 1,
-    content: `If a thin glass prism is dipped in water, minimum deviation will be ($_{a}\\mu_{g}=3/2, _{a}\\mu_{w}=4/3$):
+    optionFontScale: 1.5,
+    content: `If a thin prism of glass is dipped in water then minimum deviation of light produced by prism will be ($\\mu_{ag} = \\tfrac{3}{2},\\ \\mu_{aw} = \\tfrac{4}{3}$):
 
-(a) 1/5 of original \\
-(b) 1/8 of original \\
-(c) 1/2 of original \\
-(d) 1/3 of original`,
+(a) $\\tfrac{1}{5}$
+
+(b) $\\tfrac{1}{8}$
+
+(c) $\\tfrac{1}{2}$
+
+(d) $\\tfrac{1}{3}$`,
   },
   {
     questionNumber: 27,
     marks: 1,
     content: `A liquid does not wet the solid surface if angle of contact is:
 
-(a) zero \\
-(b) equal to $45^\\circ$ \\
-(c) equal to $60^\\circ$ \\
+(a) zero 
+
+(b) equal to $45^\\circ$ 
+
+(c) equal to $60^\\circ$ 
+
 (d) greater than $90^\\circ$`,
   },
   {
     questionNumber: 28,
     marks: 1,
-    content: `In double slit experiment, source is shifted at an angle above SQ. Position of central bright fringe will be: \\
-    [[IMAGE:https://i.ibb.co/5XMMBddK/28-phys-2025.png]]
+    content: `In the double slit experiment, the monochromatic source is shifted to a position $S'$ at an angle $\\phi$ above $SQ$. The position of central bright fringe will be:
+
+[[IMAGE:https://i.ibb.co/5XMMBddK/28-phys-2025.png|300]]
 
 (a) at $O'$ \\
 (b) at O \\
@@ -292,7 +332,7 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 29,
     marks: 1,
-    content: `If radius of $^{256}X$ is 8 fermi, then radius of $^4He$ nucleus will be:
+    content: `If the radius of a nucleus $^{256}X$ is 8 fermi, then the radius of $^4He$ nucleus will be:
 
 (a) 16 fermi \\
 (b) 2 fermi \\
@@ -302,68 +342,77 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 30,
     marks: 1,
-    content: `Four identical spheres (mass m, radius a) are at corners of a square (side b). Moment of inertia about one side parallel to plane is:
+    optionFontScale: 1.5,
+    content: `Four identical solid spheres each of mass m and radius ‘a’ are placed with their centres on the four corners of a square of side ‘b’. The moment of inertia of the system about one side of the square where the axis of rotation is parallel to the plane of the square is:
 
-(a) $\\frac{4}{5}ma^2$ \\
-(b) $\\frac{8}{5}ma^2+mb^2$ \\
-(c) $\\frac{8}{5}ma^2+2mb^2$ \\
-(d) $\\frac{4}{5}ma^2+2mb^2$`,
+(a) $\\frac{4}{5}ma^2$ 
+
+(b) $\\frac{8}{5}ma^2 + mb^2$ 
+
+(c) $\\frac{8}{5}ma^2 + 2mb^2$ 
+
+(d) $\\frac{4}{5}ma^2 + 2mb^2$`,
   },
   {
     questionNumber: 31,
     marks: 1,
-    content: `Sources emit X-rays (1 nm) and visible light (500 nm) at 200 W. Ratio of number density of photons of X-rays to visible light is:
+    optionFontScale: 1.5,
+    content: `Two sources of light emit X-rays of wavelength 1 nm and visible light of wavelength 500 nm, respectively. Both the sources emit light of the same power 200 W. The ratio of the number density of photons of the X-rays to the number density of photons of the visible light of the given wavelengths is:
 
-(a) 1/500 \\
-(b) 250 \\
-(c) 1/250 \\
+(a) $\\frac{1}{500}$ 
+
+(b) 250 
+
+(c) $\\frac{1}{250}$ 
+
 (d) 500`,
   },
   {
     questionNumber: 32,
     marks: 1,
-    content: `Capacitance of air capacitor is 6 $\\mu F$; with dielectric it is 30 $\\mu F$. Permittivity of medium is ($\\epsilon_0 = 8.85 \\times 10^{-12}$):
+    content: `The capacitance of a parallel plate capacitor with air as medium is 6 $\\mu$F. With the introduction of a dielectric medium, the capacitance becomes 30 $\\mu$F. The permittivity of the medium is ($\\epsilon_0 = 8.85 \\times 10^{-12}\\,C^2N^{-1}m^{-2}$):
 
-(a) $1.77 \\times 10^{-12}~C^2N^{-1}m^{-2}$ \\
-(b) $0.44 \\times 10^{-10}~C^2N^{-1}m^{-2}$ \\
-(c) $5.00~C^2N^{-1}m^{-2}$ \\
-(d) $0.44 \\times 10^{-13}~C^2N^{-1}m^{-2}$`,
+(a) $1.77 \\times 10^{-12}\\,C^2N^{-1}m^{-2}$ \\
+(b) $0.44 \\times 10^{-10}\\,C^2N^{-1}m^{-2}$ \\
+(c) $5.00\\,C^2N^{-1}m^{-2}$ \\
+(d) $0.44 \\times 10^{-13}\\,C^2N^{-1}m^{-2}$`,
   },
   {
     questionNumber: 33,
     marks: 1,
-    content: `Sodium and copper work functions are 2.3 eV and 4.5 eV. Ratio of threshold wavelengths is nearest to:
+    content: `Sodium and copper have work functions 2.3 eV and 4.5 eV respectively. Then the ratio of the wavelengths is nearest to:
 
-(a) 1:2 \\
-(b) 4:1 \\
-(c) 2:1 \\
-(d) 1:4`,
+(a) 1 : 2 \\
+(b) 4 : 1 \\
+(c) 2 : 1 \\
+(d) 1 : 4`,
   },
   {
     questionNumber: 34,
     marks: 1,
-    content: `When the number of nucleons in nuclei increases, binding energy per nucleon:
+    content: `When the number of nucleons in nuclei increases, the binding energy per nucleon:
 
-(a) increases continuously \\
-(b) decreases continuously \\
-(c) remains constant \\
-(d) first increases and then decreases`,
+(a) increases continuously with mass number \\
+(b) decreases continuously with mass number \\
+(c) remains constant with mass number \\
+(d) first increases and then decreases with mass number`,
   },
   {
     questionNumber: 35,
     marks: 1,
-    content: `Three capacitors 2 $\\mu F$, 3 $\\mu F$ and 6 $\\mu F$ are in series. Equivalent capacitance is:
+    content: `Three capacitors 2 $\\mu$F, 3 $\\mu$F and 6 $\\mu$F are joined in series with each other. The equivalent capacitance is:
 
-(a) 1/2 $\\mu F$ \\
-(b) 1 $\\mu F$ \\
-(c) 2 $\\mu F$ \\
-(d) 11 $\\mu F$`,
+(a) 1/2 $\\mu$F \\
+(b) 1 $\\mu$F \\
+(c) 2 $\\mu$F \\
+(d) 11 $\\mu$F`,
   },
   {
     questionNumber: 36,
     marks: 1,
-    content: `Energy level transition corresponding to shortest wavelength emission is: \\
-    [[IMAGE:https://i.ibb.co/v4RdddzZ/36-phys-2025.png]]
+    content: `The energy levels of a hydrogen atom are shown below. The transition corresponding to emission of shortest wavelength is:
+
+[[IMAGE:https://i.ibb.co/v4RdddzZ/36-phys-2025.png|300]]
 
 (a) C \\
 (b) D \\
@@ -373,8 +422,11 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 37,
     marks: 1,
-    content: `Voltage waveforms of inputs A, B and output Y show logic gate is: \\
-    [[IMAGE:https://i.ibb.co/YTyHq4c0/37-phys-2025.png]]
+    content: `A logic gate circuit has two inputs A and B and output Y. The voltage waveforms of A, B and Y are shown below:
+
+[[IMAGE:https://i.ibb.co/YTyHq4c0/37-phys-2025.png|300]]
+
+The logic circuit is:
 
 (a) AND gate \\
 (b) OR gate \\
@@ -384,19 +436,20 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 38,
     marks: 1,
-    content: `Ratio of fundamental frequencies of open pipe to closed pipe of same length is:
+    content: `The ratio of frequencies of fundamental harmonic produced by an open pipe to that of closed pipe having the same length is:
 
-(a) 1:2 \\
-(b) 2:1 \\
-(c) 1:3 \\
-(d) 3:1`,
+(a) 1 : 2 \\
+(b) 2 : 1 \\
+(c) 1 : 3 \\
+(d) 3 : 1`,
   },
   {
     questionNumber: 39,
     marks: 1,
-    content: `Select correct statement(s):
-(i) $C_p/C_v$ for diatomic > monoatomic.
-(ii) $C_p/C_v$ is more for Helium than Hydrogen.
+    content: `Consider the following statements and select the correct option.
+
+(i) The ratio of $C_p / C_v$ for a diatomic gas is more than that of a monoatomic gas.  
+(ii) The ratio of $C_p / C_v$ is more for helium gas than for hydrogen gas.
 
 (a) (i) only \\
 (b) (ii) only \\
@@ -406,112 +459,130 @@ export const physicsQuestions: Question[] = [
   {
     questionNumber: 40,
     marks: 1,
-    content: `In unbiased p-n junction, electrons diffuse from n to p because:
+    content: `In an unbiased p-n junction electrons diffuse from n-region to p-region because:
 
-(a) holes attract them \\
-(b) potential difference across junction \\
-(c) higher electron concentration in n-region \\
+(a) holes in p-region attract them \\
+(b) electrons travel across the junction due to potential difference \\
+(c) electron concentration in n-region is more compared to that in p-region \\
 (d) none of these`,
   },
   {
     questionNumber: 41,
     marks: 1,
-    content: `Particle is 4x as fast as electron. Ratio of de-Broglie wavelengths is 2:1. Mass of particle is:
+    optionFontScale: 1.5,
+    content: `A particle is traveling 4 times as fast as an electron. Assuming the ratio of de-Broglie wavelength of a particle to that of electron is 2 : 1, the mass of the particle is:
 
-(a) 16x mass of e \\
-(b) 8x mass of e \\
-(c) 1/16x mass of e \\
-(d) 1/8x mass of e`,
+(a) 16 times the mass of e⁻ 
+
+(b) 8 times the mass of e⁻ 
+
+(c) $\\frac{1}{16}$ times the mass of e⁻ 
+
+(d) $\\frac{1}{8}$ times the mass of e⁻`,
   },
   {
     questionNumber: 42,
     marks: 1,
-    content: `In YDSE, slit separation d such that first minima is directly in front of $S_1$ is: \\
-    [[IMAGE:https://i.ibb.co/YTfzkKzh/42-phys-2025.png]]
+    optionFontScale: 1.5,
+    content: `Consider a Young’s double slit experiment as shown in figure. What should be the slit separation in terms of wavelength $\\lambda$ such that the first minima occurs directly in front of the slit ($S_1$)?
 
-(a) $\\frac{\\lambda}{2(\\sqrt{5}-2)}$ \\
-(b) $\\frac{\\lambda}{(\\sqrt{5}-2)}$ \\
-(c) $\\frac{\\lambda}{2(5-\\sqrt{2})}$ \\
+[[IMAGE:https://i.ibb.co/YTfzkKzh/42-phys-2025.png|300]] 
+\\
+(a) $\\frac{\\lambda}{2(\\sqrt{5}-2)}$ \
+
+(b) $\\frac{\\lambda}{(\\sqrt{5}-2)}$ \
+
+(c) $\\frac{\\lambda}{2(5-\\sqrt{2})}$ \
+
 (d) $\\frac{\\lambda}{(5-\\sqrt{2})}$`,
   },
   {
     questionNumber: 43,
     marks: 1,
-    content: `Speed of simple pendulum at $x=a/2$ (amplitude a, period T) is:
+    optionFontScale: 1.5,
+    content: `A simple pendulum performs SHM about $x = 0$ with an amplitude $a$ and time period $T$. What is the speed of the pendulum at $x = a/2$?
 
-(a) $\\frac{a\\pi\\sqrt{3}}{T}$ \\
-(b) $\\frac{a^2\\pi^2\\sqrt{3}}{T^2}$ \\
-(c) $a/T$ \\
-(d) $a\\pi/T$`,
+(a) $\\frac{a\\pi\\sqrt{3}}{T}$ 
+
+(b) $\\frac{a^2\\pi^2\\sqrt{3}}{T^2}$ 
+
+(c) $\\frac{a}{T}$ 
+
+(d) $\\frac{a\\pi}{T}$`,
   },
   {
     questionNumber: 44,
     marks: 1,
-    content: `Telescope has power 10, eyepiece focal length 20 cm. Objective focal length is:
+    content: `An astronomical telescope has a magnifying power 10, the focal length of the eyepiece is 20 cm. The focal length of the objective is:
 
-(a) 1/200 cm \\
-(b) 1/2 cm \\
-(c) 200 cm \\
+(a) 1/200 cm  
+(b) 1/2 cm  
+(c) 200 cm  
 (d) 2 cm`,
   },
   {
     questionNumber: 45,
     marks: 1,
-    content: `Torque about origin when force $3\\hat{j}$ N acts at position $2\\hat{k}$ m is:
+    optionFontScale: 1.5,
+    content: `Find the torque about the origin when a force of $3\\hat{j}$ N acts on a particle whose position vector is $2\\hat{k}$ m.
 
-(a) $6\\hat{j}$ Nm \\
-(b) $-6\\hat{i}$ Nm \\
-(c) $6\\hat{k}$ Nm \\
+(a) $6\\hat{j}$ Nm  
+(b) $-6\\hat{i}$ Nm  
+(c) $6\\hat{k}$ Nm  
 (d) $6\\hat{i}$ Nm`,
   },
   {
     questionNumber: 46,
     marks: 1,
-    content: `Planet period around sun (max/min distances $r_1, r_2$) is proportional to:
+    optionFontScale: 1.5,
+    content: `A planet of mass m moves around the sun of mass M in an elliptical orbit. The maximum and minimum distance of the planet from the sun are $r_1$ and $r_2$ respectively. The time period of planet is proportional to:
 
-(a) $r_1^{2/5}$ \\
-(b) $(\\frac{r_1+r_2}{2})^{3/2}$ \\
-(c) $(\\frac{r_1-r_2}{2})^{3/2}$ \\
+(a) $r_1^{2/5}$  
+
+(b) $(\\frac{r_1 + r_2}{2})^{3/2}$  
+
+(c) $(\\frac{r_1 - r_2}{2})^{3/2}$  
+
 (d) $r^{3/2}$`,
   },
   {
     questionNumber: 47,
     marks: 1,
-    content: `Planet has double Earth's mass and same density. Weight of object on it is:
+    content: `Consider a planet in some solar system which has a mass double the mass of earth and density equal to the average density of earth. If the weight of an object on earth is W, the weight of the same object on that planet will be:
 
-(a) 2W \\
-(b) W \\
-(c) $2^{1/3}W$ \\
+(a) 2W  
+(b) W  
+(c) $2^{1/3}W$  
 (d) $\\sqrt{2}W$`,
   },
   {
     questionNumber: 48,
     marks: 1,
-    content: `Minimum speed for water in bucket (1.6 m string) not to spill at highest point is:
+    content: `A bucket tied at the end of a 1.6 m long string is whirled in a vertical circle with constant speed. What should be the minimum speed so that the water from the bucket does not spill when the bucket is at the highest position?
 
-(a) 4 m/sec \\
-(b) 6.25 m/sec \\
-(c) 16 m/sec \\
+(a) 4 m/sec  
+(b) 6.25 m/sec  
+(c) 16 m/sec  
 (d) None of these`,
   },
   {
     questionNumber: 49,
     marks: 1,
-    content: `Min velocity for car to traverse flat curve (radius 150 m, friction 0.6) without skidding is:
+    content: `The minimum velocity (in ms$^{-1}$) with which a car driver must traverse a flat curve of radius 150 m and coefficient of friction 0.6 to avoid skidding is:
 
-(a) 60 \\
-(b) 30 \\
-(c) 15 \\
+(a) 60  
+(b) 30  
+(c) 15  
 (d) 25`,
   },
   {
     questionNumber: 50,
     marks: 1,
-    content: `Mean free path of gas molecule is:
+    content: `Mean free path of a gas molecule is
 
-(a) inversely proportional to number density \\
-(b) inversely proportional to diameter \\
-(c) directly proportional to square root of T \\
-(d) directly proportional to molecular mass`,
+(a) inversely proportional to number of molecules per unit volume  
+(b) inversely proportional to diameter of the molecule  
+(c) directly proportional to the square root of the absolute temperature  
+(d) directly proportional to the molecular mass`,
   },
 ];

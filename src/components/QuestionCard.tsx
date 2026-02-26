@@ -13,6 +13,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   marks,
   content,
   subject,
+  optionFontScale,
 }) => {
   return (
     <Paper
@@ -98,11 +99,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         />
       </Box>
 
-      <Divider sx={{ mb: 4 }} />
+      <Divider sx={{ mb: 1 }} />
 
       {/* Question Content */}
       <Box sx={{ flexGrow: 1, overflowY: "auto" }}>
-        <QuestionRenderer content={content} />
+        <QuestionRenderer content={content} optionFontScale={optionFontScale} />
       </Box>
 
       {/* Footer / Page Number */}

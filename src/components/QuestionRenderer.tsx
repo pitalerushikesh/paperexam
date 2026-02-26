@@ -8,40 +8,82 @@ import { injectDriveImages } from "../utils/helper";
 
 interface QuestionRendererProps {
   content: string;
+  optionFontScale?: number; // 👈 optional, per-question
 }
 
 export const QuestionRenderer: React.FC<QuestionRendererProps> = ({
   content,
+  optionFontScale = 1, // 👈 default = no change
 }) => {
-  // Process the content to convert [[IMAGE:..]] to markdown images
-  const processedContent = React.useMemo(
-    () => injectDriveImages(content),
-    [content],
-  );
+  const processedContent = React.useMemo(() => {
+    const withImages = injectDriveImages(content);
+
+    // ✅ wrap ONLY (a), (b), (c), (d)
+    return withImages.replace(
+      /^\((a|b|c|d)\)\s+/gim,
+      `<span class="mcq-label">($1)</span> `,
+    );
+  }, [content]);
+
   return (
     <Box
       sx={{
         color: "text.primary",
-        fontSize: { xs: "0.875rem", sm: "1.2rem" }, // text-sm sm:text-base
-        lineHeight: { xs: 1.625, sm: 2 }, // leading-relaxed sm:leading-loose
+        fontSize: { xs: "0.875rem", sm: "1.2rem" },
+        lineHeight: { xs: 1.625, sm: 2 },
         fontFamily: "Merriweather, serif",
 
-        "& p": { mb: 2 }, // [&_p]:mb-3 (approx)
-        "& ul": {
-          mt: 2,
-          pl: 4,
-          listStyleType: "disc",
-          "& > li": { mb: 1 }, // space-y-2
-        },
-        "& li": { color: "text.secondary" }, // text-muted-foreground
-        "& strong": {
-          color: "text.primary",
-          fontWeight: 600,
-        },
+        "& p": { mb: 2 },
+        "& strong": { fontWeight: 600 },
         "& br": { display: "block", mt: 1 },
 
-        // KaTeX specific spacing
-        "& .katex-display": { my: 3 },
+        /* ===== MCQ OPTIONS (SCOPED + SAFE) ===== */
+        // "& .mcq-line": {
+        //   display: "inline-block",
+        //   minWidth: "45%",
+        //   marginRight: "24px",
+        //   marginBottom: "14px",
+        //   fontSize: {
+        //     xs: `${1 * optionFontScale}rem`,
+        //     sm: `${1.3 * optionFontScale}rem`,
+        //   },
+        //   lineHeight: 2,
+        // },
+
+        // "& .mcq-label": {
+        //   fontWeight: 600,
+        //   fontSize: "1.2em",
+        //   marginRight: "6px",
+        // },
+
+        // "& p:has(.mcq-label)": {
+        //   fontSize: "1.25rem",
+        //   lineHeight: 2,
+        // },
+
+        // "& .mcq-label": {
+        //   fontWeight: 600,
+        //   fontSize: `${1.05 * optionFontScale}em`,
+        // },
+
+        "& .mcq-label": {
+          fontSize: `${0.7 * optionFontScale}em`,
+        },
+
+        // scale inline math + text only
+        "& p > .mcq-label + .katex": {
+          fontSize: `${1.2 * optionFontScale}em`,
+        },
+
+        "& p > .mcq-label + span:not(.katex-display)": {
+          fontSize: `${1.2 * optionFontScale}em`,
+        },
+
+        // explicitly DO NOT scale display math
+        "& .katex-display": {
+          fontSize: "1em",
+          my: 5,
+        },
       }}
     >
       <ReactMarkdown
