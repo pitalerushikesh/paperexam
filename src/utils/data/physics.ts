@@ -330,27 +330,28 @@ export const physicsQuestions: Question[] = [
     questionNumber: 22,
     marks: 1,
     optionFontScale: 1.5,
-    content: `The four arms of a Wheatstone bridge have resistances as shown in the figure. A galvanometer of 15 $\\Omega$ resistance is connected across BD. Calculate the current through the galvanometer when a potential difference of 10 V is maintained across AC. \\
-    <img
-        src="https://i.ibb.co/tMTdct0B/22-phys-2025.png"
-        alt="rod on incline"
-        style="
-          float:left;
-          width:50%;
-          max-width:50%;
-          margin:8px 50px 16px 0;
-          padding-right:18px;
-          border-right:2px solid rgba(0,0,0,0.25);
-          display:block;"
-      />
+    content: `A current through 1 $\\Omega$ resistance in the following circuit is 
 
-(a) 2.44 $\\mu$A 
+  <img
+    src="https://i.ibb.co/Q7qWH8Gf/22-phys-2025-new.png"
+    alt="current through resistor circuit"
+    style="
+      float:left;
+      width:60%;
+      max-width:60%;
+      margin:8px 50px 16px 0;
+      padding-right:18px;
+      border-right:2px solid rgba(0,0,0,0.25);
+      display:block;"
+  />
 
-(b) 4.87 $\\mu$A 
+(a) 1.8 A 
 
-(c) 2.44 mA 
+(b) 1.2 A 
 
-(d) 4.87 mA`,
+(c) 1.5 A 
+
+(d) 1 A`,
   },
   {
     questionNumber: 23,
@@ -480,29 +481,31 @@ export const physicsQuestions: Question[] = [
     questionNumber: 30,
     marks: 1,
     optionFontScale: 1.5,
-    content: `Four identical solid spheres each of mass m and radius ‘a’ are placed with their centres on the four corners of a square of side ‘b’. The moment of inertia of the system about one side of the square where the axis of rotation is parallel to the plane of the square is:
+    content: `A ring, a solid sphere and a disc have same mass and radius. Which of them have the largest moment of inertia? 
 
-(a) $\\frac{4}{5}ma^2$ 
+(A) All have the same moment of inertia. 
 
-(b) $\\frac{8}{5}ma^2 + mb^2$ 
+(B) Ring only. 
 
-(c) $\\frac{8}{5}ma^2 + 2mb^2$ 
+(C) Solid sphere only. 
 
-(d) $\\frac{4}{5}ma^2 + 2mb^2$`,
+(D) Disc only.`,
   },
   {
     questionNumber: 31,
     marks: 1,
     optionFontScale: 1.5,
-    content: `Two sources of light emit X-rays of wavelength 1 nm and visible light of wavelength 500 nm, respectively. Both the sources emit light of the same power 200 W. The ratio of the number density of photons of the X-rays to the number density of photons of the visible light of the given wavelengths is:
+    content: `When light of wavelength $\\lambda$ is incident on a photosensitive surface, photons of power $P$ are emitted. The number of photons $n$ emitted in time $t$ is \\
+[$h$ = Planck’s constant, $c$ = velocity of light in vacuum] 
 
-(a) $\\frac{1}{500}$ 
 
-(b) 250 
+(A) $\\dfrac{hc}{P\\lambda t}$ \
 
-(c) $\\frac{1}{250}$ 
+(B) $\\dfrac{P\\lambda}{htc}$ \
 
-(d) 500`,
+(C) $\\dfrac{P\\lambda t}{hc}$ \
+
+(D) $\\dfrac{hP}{\\lambda tc}$`,
   },
   {
     questionNumber: 32,
@@ -673,32 +676,15 @@ $(d) None \\ of \\ these$`,
   {
     questionNumber: 42,
     marks: 1,
-    optionFontScale: 1.5,
-    content: `Consider a Young’s double slit experiment as shown in figure. What should be the slit separation in terms of wavelength $\\lambda$ such that the first minima occurs directly in front of the slit ($S_1$) ?
+    content: `In a biprism experiment, the distance between the two sources is doubled and the distance between the slit and the eyepiece is also doubled. Then the width of the fringe is 
 
+(A) halved 
 
+(B) unchanged 
 
-<img
-        src="https://i.ibb.co/YTfzkKzh/42-phys-2025.png"
-        alt="rod on incline"
-        style="
-          float:left;
-          width:70%;
-          max-width:70%;
-          margin:8px 28px 16px 0;
-          padding-right:18px;
-          border-right:2px solid rgba(0,0,0,0.25);
-          display:block;"
-      />
+(C) reduced to $(1/3)^{rd}$ 
 
-\\
-(a) $\\frac{\\lambda}{2(\\sqrt{5}-2)}$ 
-
-(b) $\\frac{\\lambda}{(\\sqrt{5}-2)}$ 
-
-(c) $\\frac{\\lambda}{2(5-\\sqrt{2})}$ 
-
-(d) $\\frac{\\lambda}{(5-\\sqrt{2})}$`,
+(D) doubled`,
   },
   {
     questionNumber: 43,
@@ -760,20 +746,19 @@ $(d) None \\ of \\ these$`,
     questionNumber: 47,
     marks: 1,
     optionFontScale: 1.5,
-    content: `Consider a planet in some solar system which has a mass double the mass of earth and density equal to the average density of earth. If the weight of an object on earth is W, the weight of the same object on that planet will be:
+    content: `Resolving power of telescope increases when 
 
-(a) $2W$ \
+(A) wavelength of light decreases 
 
-(b) $W$ \
+(B) wavelength of light increases 
 
-(c) $2^\\frac{1}{3}W$ \
+(C) focal length of eye-piece increases 
 
-(d) $\\sqrt{2}W$`,
+(D) focal length of eye-piece decreases`,
   },
   {
     questionNumber: 48,
     marks: 1,
-
     content: `A bucket tied at the end of a 1.6 m long string is whirled in a vertical circle with constant speed. What should be the minimum speed so that the water from the bucket does not spill when the bucket is at the highest position ? 
 
 (a) 4 m/sec \\
