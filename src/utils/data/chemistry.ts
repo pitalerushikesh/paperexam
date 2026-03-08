@@ -6,19 +6,26 @@ export const chemistryQuestions: Question[] = [
     marks: 1,
     content: `Identify the species having one $\\pi$-bond and maximum number of canonical forms from the following:
 
-(a) $SO_3$ \\
-(b) $O_2$ \\
-(c) $SO_2$ \\
+(a) $SO_3$ 
+
+(b) $O_2$ 
+
+(c) $SO_2$ 
+
 (d) $CO_3^{2-}$`,
   },
   {
     questionNumber: 52,
     marks: 1,
+    optionFontScale: 1.5,
     content: `The shortest wavelength of hydrogen atom in Lyman series is $\\lambda$. The longest wavelength in Balmer series of $He^+$ is:
 
-(a) $\\frac{5}{9\\lambda}$ \\
-(b) $\\frac{9\\lambda}{5}$ \\
-(c) $\\frac{36\\lambda}{5}$ \\
+(a) $\\frac{5}{9\\lambda}$ \
+
+(b) $\\frac{9\\lambda}{5}$ \
+
+(c) $\\frac{36\\lambda}{5}$ \
+
 (d) $\\frac{5\\lambda}{9}$`,
   },
   {
@@ -34,12 +41,16 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 54,
     marks: 1,
-    content: `van der Waals equation for a gas is stated as $P=\\frac{nRT}{V-nb}-a(\\frac{n}{V})^2$. This equation reduces to the perfect gas equation $P=\\frac{nRT}{V}$ when:
+    optionFontScale: 1.5,
+    content: `What is the volume occupied by 32 g methane gas at STP?
 
-(a) temperature is sufficient high and pressure is low \\
-(b) temperature is sufficient low and pressure is high \\
-(c) both temperature and pressure are very high \\
-(d) both temperature and pressure are very low`,
+(a) 33.6 dm$^3$
+
+(b) 22.4 dm$^3$
+
+(c) 56.0 dm$^3$
+
+(d) 44.8 dm$^3$`,
   },
   {
     questionNumber: 55,
@@ -76,7 +87,7 @@ export const chemistryQuestions: Question[] = [
     marks: 1,
     content: `The statement that is not true about ozone is:
 
-(a) in the stratosphere, CFCs release chlorine free radicals (Cl) which reacts with $O_3$ \\
+(a) in the stratosphere, CFCs release chlorine free radicals (Cl•) which react with $O_3$ to give chlorine dioxide radicals \\
 (b) in the atmosphere, it is depleted by CFCs \\
 (c) in the stratosphere, it forms a protective shield against UV radiation \\
 (d) it is a toxic gas and its reaction with NO gives $NO_2$`,
@@ -94,31 +105,37 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 60,
     marks: 1,
-    content: `Identify the correct trend given below:
+    optionFontScale: 1.5,
+    content: `What is oxidation state of Mn in $MnO_4^-$?
 
-(a) $\\Delta_o$ of $[Cr(H_2O)_6]^{2+}>[Mo(H_2O)_6]^{2+}$ and $\\Delta_o$ of $[Ti(H_2O)_6]^{3+}>[Ti(H_2O)_6]^{2+}$ \\
-(b) $\\Delta_o$ of $[Cr(H_2O)_6]^{2+}>[Mo(H_2O)_6]^{2+}$ and $\\Delta_o$ of $[Ti(H_2O)_6]^{3+}<[Ti(H_2O)_6]^{2+}$ \\
-(c) $\\Delta_o$ of $[Cr(H_2O)_6]^{2+}<[Mo(H_2O)_6]^{2+}$ and $\\Delta_o$ of $[Ti(H_2O)_6]^{3+}>[Ti(H_2O)_6]^{2+}$ \\
-(d) $\\Delta_o$ of $[Cr(H_2O)_6]^{2+}<[Mo(H_2O)_6]^{2+}$ and $\\Delta_o$ of $[Ti(H_2O)_6]^{3+}<[Ti(H_2O)_6]^{2+}$`,
+(a) +6
+
+(b) +4
+
+(c) +7
+
+(d) +5`,
   },
   {
     questionNumber: 61,
     marks: 1,
-    content: `Halogenation of which one of the following will yield m-substituted product with respect to methyl group as a major product?
+    optionFontScale: 1.5,
+    content: `What is the product formed when propene is treated with HBr?
 
-(a) [[IMAGE:https://i.ibb.co/zVjGkFnX/61-chem-2025-opt-a.png|150]]
-(b) [[IMAGE:https://i.ibb.co/N6ghhgB3/61-chem-2025-opt-b.png|150]] 
-(c) [[IMAGE:https://i.ibb.co/8DXHRYwT/61-chem-2025-opt-c.png|150]] 
-(d) [[IMAGE:https://i.ibb.co/j9gxNS0V/61-chem-2025-opt-d.png|150]]`,
+(a) 2-Bromopropane \\
+(b) 1-Bromopropane \\
+(c) 2-Bromopropene \\
+(d) 3-Bromopropene`,
   },
   {
     questionNumber: 62,
     marks: 1,
+    optionFontScale: 1.5,
     content: `An element crystallises in a face-centred cubic (fcc) unit cell with cell edge a. The distance between the centres of two nearest octahedral voids in the crystal lattice is:
 
-(a) $\\frac{a}{\sqrt{2}}$ \\
-(b) a \\
-(c) $\\sqrt{2}a$ \\
+(a) $\\frac{a}{\\sqrt{2}}$ 
+(b) a 
+(c) $\\sqrt{2}a$ 
 (d) $\\frac{a}{2}$`,
   },
   {
@@ -134,12 +151,13 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 64,
     marks: 1,
-    content: `The correct order of bond orders of $C_2^{2-}$, $N_2^{2-}$ and $O_2^{2-}$ is:
+    optionFontScale: 1.5,
+    content: `Identify the element having smallest atomic radius from following.
 
-(a) $C_2^{2-}<N_2^{2-}<O_2^{2-}$ \\
-(b) $O_2^{2-}<N_2^{2-}<C_2^{2-}$ \\
-(c) $C_2^{2-}<O_2^{2-}<N_2^{2-}$ \\
-(d) $N_2^{2-}<C_2^{2-}<O_2^{2-}$`,
+(a) Tb \\
+(b) Sm \\
+(c) Ce \\
+(d) Tm`,
   },
   {
     questionNumber: 65,
@@ -164,12 +182,12 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 67,
     marks: 1,
-    content: `The emf of cell $Tl | Tl^+(0.001M) || Cu^{2+}(0.01M) | Cu$ is 0.83 V at 298 K. It could be increased by:
+    content: `Calculate the rate constant of a first order reaction having half-life of 6 hour.
 
-(a) increasing concentration of $Tl^+$ ions \\
-(b) increasing concentration of both $Tl^+$ and $Cu^{2+}$ ions \\
-(c) decreasing concentration of both $Tl^+$ and $Cu^{2+}$ ions \\
-(d) increasing concentration of $Cu^{2+}$ ions`,
+(a) $3.465\\;\\text{hour}^{-1}$ \\
+(b) $8.650\\;\\text{hour}^{-1}$ \\
+(c) $0.1155\\;\\text{hour}^{-1}$ \\
+(d) $1.732\\;\\text{hour}^{-1}$`,
   },
   {
     questionNumber: 68,
@@ -194,12 +212,12 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 70,
     marks: 1,
-    content: `The complex that can show optical activity is:
+    content: `Which among the following compounds has chiral carbon atom?
 
-(a) $trans-[CrCl_2(ox)_2]^{3-}$ \\
-(b) $trans-[Fe(NH_3)_2(CN)_4]^{-}$ \\
-(c) $cis-[Fe(NH_3)_2(CN)_4]^{-}$ \\
-(d) $cis-[CrCl_2(ox)_2]^{3-}$`,
+(a) $(CH_3)_3–CCl$ \\
+(b) $(CH_3CH_2)_2CHCl$ \\
+(c) $CH_3CH(Cl)CH_2CH_3$ \\
+(d) $(CH_3)_2–CHCl$`,
   },
   {
     questionNumber: 71,
@@ -214,12 +232,13 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 72,
     marks: 1,
+    optionFontScale: 1.5,
     content: `In a first order decomposition reaction, the time taken for the decomposition of reactant to one fourth and one eighth of its initial concentration are $t_1$ and $t_2$ respectively. The ratio $t_1/t_2$ will be:
 
-(a) 3/4 \\
-(b) 3/2 \\
-(c) 2/3 \\
-(d) 1/2`,
+(a) $\\frac{4}{3}$ 
+(b) $\\frac{3}{2}$ 
+(c) $\\frac{3}{4}$ 
+(d) $\\frac{2}{3}$`,
   },
   {
     questionNumber: 73,
@@ -234,11 +253,17 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 74,
     marks: 1,
+    optionFontScale: 1.5,
     content: `$t_{1/4}$ can be taken as the time taken for the concentration of a reactant to drop to 3/4 of its initial value. If the rate constant for a first order reaction is k, the $t_{1/4}$ can be written as:
 
-(a) 0.75/k \\
-(b) 0.69/k \\
-(c) 0.29/k \\
+(Given: $\\log \\frac{4}{3} = 0.125$)
+
+(a) 0.75/k
+
+(b) 0.69/k
+
+(c) 0.29/k
+
 (d) 0.10/k`,
   },
   {
@@ -438,20 +463,25 @@ export const chemistryQuestions: Question[] = [
   {
     questionNumber: 94,
     marks: 1,
+    optionFontScale: 1.5,
     content: `2 moles each of ethylene glycol and glucose are dissolved in 500 g of water. The boiling point of the resulting solution is: (Given: Ebullioscopic constant of water = 0.52 K kg/mol)
 
-(a) 379.2 K \\
-(b) 377.3 K \\
-(c) 375.3 K \\
+(a) 379.2 K
+
+(b) 377.3 K
+
+(c) 375.3 K
+
 (d) 277.3 K`,
   },
   {
     questionNumber: 95,
     marks: 1,
-    content: `When o-hydroxybenzaldehyde undergoes intramolecular aldol condensation, the major product formed is: \\
-    [[IMAGE:https://i.ibb.co/Zprh13WF/95-chem-2025.png|300]]
-.
-[[IMAGE:https://i.ibb.co/VYNG3y64/95-chem-2025-options.png|500]]`,
+    content: `When the following compound
+[[IMAGE:https://i.ibb.co/Zprh13WF/95-chem-2025.png|300]]
+undergoes intramolecular aldol condensation, the major product formed is:
+
+[[IMAGE:https://i.ibb.co/WvD0rM8x/95-chem-2025-options.png|500]]`,
   },
   {
     questionNumber: 96,
