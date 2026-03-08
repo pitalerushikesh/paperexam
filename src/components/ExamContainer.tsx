@@ -114,7 +114,11 @@ export const ExamContainer: React.FC = () => {
                   <ExamHeader
                     year={2025}
                     subject={selectedSubject.toUpperCase()}
-                    totalMarks={currentQuestions.length * 2}
+                    totalMarks={
+                      selectedSubject.toUpperCase() === "MATHS"
+                        ? currentQuestions.length * 2
+                        : currentQuestions.length
+                    }
                     logoUrl={logo}
                   />
                 ) : (
